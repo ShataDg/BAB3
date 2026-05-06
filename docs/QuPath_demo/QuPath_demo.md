@@ -2,16 +2,22 @@
 
 *Lab author: Shatavisha Dasgupta* . 
 
-(Adapted from [QuPath documentation](https://qupath.readthedocs.io/en/stable/docs/tutorials/index.html) and [Pete Bankhead's video tutorial](https://youtu.be/xtjsigsUrms?si=PLyccu1S0xfYJHYN))
+Adapted from:
+1. [QuPath documentation](https://qupath.readthedocs.io/en/stable/docs/tutorials/index.html)
+2. [Pete Bankhead's video tutorial](https://youtu.be/xtjsigsUrms?si=PLyccu1S0xfYJHYN)
+3. [From Samples to Knowledge 2025 Repo](https://saramcardle.github.io/FS2K/README.html)
 
 ## Learning Objectives
-- Create a QuPath project
-- View pyramidal files in QuPath
-- Annotate regions of interest
-- Detect cells in the regions of interest
-- Perform and export measurements on detected cells
+This tutorial provides an overview of the basic functionalities of QuPath.
+Specifically, the tutorial covers the following:
+- Creating a QuPath project
+- Viewing pyramidal files
+- Setting channel names
+- Annotating regions of interest
+- Detecting cells in the regions of interest
+- Performing measurements on detected cells and exporting the data
 
-**Lab Data** in [this folder](https://drive.google.com/drive/folders/1z0FnjmPLGjEnIpPu_P8PTB-4ck6Z9BcA?usp=drive_link) (Originally sourced from [here](https://openslide.cs.cmu.edu/download/openslide-testdata/Hamamatsu/) and [here]((https://openslide.cs.cmu.edu/download/openslide-testdata/Aperio/CMU-1.svs))
+**Lab Data** in [this folder](https://drive.google.com/drive/folders/1z0FnjmPLGjEnIpPu_P8PTB-4ck6Z9BcA?usp=drive_link) (Originally sourced from [here](https://openslide.cs.cmu.edu/download/openslide-testdata/Hamamatsu/) and [here]((https://openslide.cs.cmu.edu/download/openslide-testdata/Aperio/CMU-1.svs)))
 
 ---
 
