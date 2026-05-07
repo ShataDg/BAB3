@@ -33,71 +33,77 @@ QuPath provides powerful tools for **annotation, visualization, and image analys
 
 
 ### 1.2 What are pyramidal file formats?
-- Whole slide images (WSIs) are a crucial component of translational research focussing on Histopathology, because they allow studying changes in individual tissue structure in health or disease the context of the parent organ
-- WSIs tend to be of substantial size, often > 10GB, and contain billions of pixels -- so these are commonly stored in a pyramidal file format
-- A pyramidal file format stores images at multiple resolutions in a single file, organized in a pyramid-like hierarchy(highest resolution at the base, progressively lower resolutions above).
-- This optimizes performance for viewing, processing, and analyzing large images without needing to load the entire high-res image into memory.
-- Common Use Cases:
-Digital pathology (e.g., .svs, .scn, .ndpi, .tiff)
-Spatial Biology (e.g. .tiff)
-Geospatial imaging (e.g., GeoTIFF)
-- In histology images, zooming in (looking under higher magnification) allows examining the finer details in the cell / tissue structures
-- Structure of pyramidal images (as shown in the figure):
+- Whole slide images (WSIs) are a crucial component of translational research focussing on Histopathology, because they allow comparing changes in diseased tissue with healthy tissue, which are often present on the same slide. Additionally, they also allow quantifying parameters of prognostic significance, such as depth of invasion of tumors
+- WSIs contain a wealth of information -- and billions of pixels -- so these tend to be of substantial size, often exceeding 10 GB
+- To make viewing, processing, and analysis more efficient, WSIs are commonly stored in pyramidal file formats
+- A pyramidal file stores the same image at multiple resolutions within a single file. These resolutions are arranged in a pyramid-like hierarchy, with the full-resolution image at the base and progressively lower-resolution versions above it
+- This allows the software to load only the resolution needed for a given zoom level, rather than loading the entire high-resolution image into memory
+- In histology, this is especially useful because low-resolution views allow rapid navigation across the tissue, while high-resolution views allow detailed examination of cellular and tissue structures
+- As shown in the figure, pyramidal images are typically organized as:
   - Level 0: Full-resolution image
-  - Higher levels : Downsampled versions (e.g., 1/2, 1/4, 1/8 scale)
-- Advantages of pyramidal file format:
-  - Faster loading and rendering of large images  
-  - Reduced memory footprint when viewing subsets or low-resolution previews  
-  - Facilitates region-of-interest (ROI) extraction without full image decoding
-- Common pyramidal file formats:
-  - TIFF with pyramid tags (.tiff/.ome.tiff)
-  - SVS (Aperio), NDPI (Hamamatsu), SCN (Leica), etc
-- Reading Tools:
-  - OpenSlide, Bio-Formats, pyvips, tifffile, QuPath, and others
+  - Higher levels: Downsampled versions, such as 1/2, 1/4, or 1/8 scale
+  
+<img src="TutorialImages/pyramidalimage.jpg" alt="alt text" width="400" height="300">
 
-Limitations:
-Larger file sizes due to storage of multiple resolutions
-Requires specialized software for reading/writing
-
-<img src="TutorialImages/pyramidalimage.jpg" alt="alt text" width="300" height="200">
-
+- Common use cases include:
+  - Digital pathology: .svs, .scn, .ndpi, .tiff
+  - Spatial biology: .tiff, .ome.tiff
+  - Geospatial imaging: GeoTIFF
+- Pyramidal file formats offer several advantages for large-image analysis:
+  - Faster loading and rendering
+  - Lower memory usage during visualization
+  - Efficient low-resolution previews
+  - Region-of-interest extraction without decoding the entire image
+- Limitations:
+  - Pyramidal files can be larger because they store multiple resolutions
+  - They often require specialized software for reading, writing, or processing
+- Common File Formats:
+  - TIFF-based formats such as .tiff and .ome.tiff
+  - Vendor-specific formats such as .svs (Aperio), .ndpi (Hamamatsu), or .scn (Leica)
+- These files can be read using tools such as:
+  - OpenSlide
+  - Bio-Formats
+  - pyvips
+  - tifffile
+  - QuPath
 
 ## 2. Exercise steps
 
-
 ### 2.1 Install QuPath
 
-
+Please install the latest version from [here](https://qupath.github.io/)
 
 ### 2.2 Launch QuPath
 
-Click on the QuPath icon.
-The welcome screen links to QuPath documentation, forum.image.sc, and the source code
+Click on the QuPath icon, and wait for QuPath to launch.
+When the QuPath window opens, you will notice the welcome screen, which links to QuPath documentation, the [image analysis forum](forum.image.sc), and also the [source code](https://github.com/qupath/qupath)
 
-<img src="TutorialImages/qupathwelcomescreen.jpg">
+<img src="TutorialImages/qupathwelcomescreen.jpg" width="400" height="300">
 
 ### 2.2 Create a QuPath project
 Although it is possible to view and work with single images in QuPath, creating a "Project" makes saving and reloading data associated with multiple images much more efficient. A QuPath project groups related images to easily switch between them via thumbnails and also organizes associated data files, scripts, and classifiers.
 
-#### A. Create a new / choose a project folder
-The project folder can be any folder, stored anywhere on your computer, but it **must be empty**.
-This can be done by doing either of the following:
-1. Through `File --> Project... --> Create new project`
+  #### A. Create a new / choose a project folder
+  We start by creating a "project folder", which can be any folder, stored anywhere on your computer, but it **must be empty**.
 
-<img src="TutorialImages/createproject_1.jpg">
+  This can be done by doing either of the following:
+  1. Through `File --> Project... --> Create new project`
 
-This is how a QuPath project folder can look like:
+  <img src="TutorialImages/qupathproject_1.png>
 
-<img src="TutorialImages/createproject_2.jpg">
+  <img src="TutorialImages/createproject_1.jpg" width="400" height="200">
+
+  This is how a QuPath project folder can look like:
+
+  <img src="TutorialImages/createproject_2.jpg">
 
 
+  1. Dragging and dropping the folder into QuPath
 
-2. Dragging and dropping the folder into QuPath
+  #### B. Add images to your project
+  You can add images via `File --> Project... --> Add images`, or, you can drag and drop the images into QuPath. This will open a dialog box, where you can set parameters related to the image being imported.
 
-#### B. Add images to your project
-You can add images via `File --> Project... --> Add images`, or, you can drag and drop the images into QuPath. This will open a dialog box, where you can set parameters related to the image being imported.
-
-<img src="TutorialImages/imageparameters.jpg">
+  <img src="TutorialImages/imageparameters.jpg">
 
 ### 2.3 View image properties
 
