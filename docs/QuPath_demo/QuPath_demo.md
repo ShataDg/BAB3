@@ -104,7 +104,7 @@ Although it is possible to view and work with single images in QuPath, creating 
   You can name the project anything you like -- for this example, I have named it `qupath_project`.
   You will notice the project name will appear in the analysis pane.
 
-  <img src="TutorialImages/createproject_3.png" width="250" height="100" style="margin-left: 40px;">
+  <img src="TutorialImages/createproject_3.png" width="270" height="100" style="margin-left: 40px;">
 
   
   #### *B. Add images to your project*
