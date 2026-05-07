@@ -113,12 +113,13 @@ Although it is possible to view and work with single images in QuPath, creating 
   #### *B. Add images to your project*
   You can add images via `File --> Project --> Add images`, or, you can drag and drop the images into QuPath. 
   
-  <img src="TutorialImages/addimage.png" width="300" height="400" style="margin-left: 40px;">
-  
-  This will open a dialog box, where you can set parameters related to the image being imported.
-  
+  <img src="TutorialImages/addimage_1.png" width="300" height="400" style="margin-left: 40px;">
 
-  <img src="TutorialImages/imageparameters.jpg">
+  Let us start by importing the image `CMU-1.ndpi`. This is a hematoxylin-eosin stained section of skin scanned by Hamamatsu scanner.
+  
+  When you import the image, a dialog box will open where you can set parameters related to the image being imported, as shown below.
+
+  <img src="TutorialImages/importimage.png">
 
 
   <img src="TutorialImages/createproject_4.jpg" width="250" height="100" style="margin-left: 40px;">
