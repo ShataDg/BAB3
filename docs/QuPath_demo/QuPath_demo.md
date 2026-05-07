@@ -109,10 +109,7 @@ Although it is possible to view and work with single images in QuPath, creating 
   #### *B. Add images to your project*
   You can add images via `File --> Project --> Add images`, or, you can drag and drop the images into QuPath. 
   
-  <img src="TutorialImages/addimage.png" width="270" height="100" style="margin-left: 40px;">
-  
-  
-  
+  <img src="TutorialImages/addimage.png" width="270" height="400" style="margin-left: 40px;">
   
   This will open a dialog box, where you can set parameters related to the image being imported.
   
