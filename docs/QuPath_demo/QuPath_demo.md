@@ -81,6 +81,7 @@ QuPath provides powerful tools for **annotation, visualization, and image analys
 Please install the latest version from [here](https://qupath.github.io/)
 
 ### 2.2 Launch QuPath
+-------------------------------------
 
 Click on the QuPath icon, and wait for QuPath to launch.
 When the QuPath window opens, you will notice the welcome screen, which links to QuPath documentation, the [image analysis forum](forum.image.sc), and also the [source code](https://github.com/qupath/qupath)
@@ -88,6 +89,7 @@ When the QuPath window opens, you will notice the welcome screen, which links to
 <img src="TutorialImages/qupathwelcomescreen.jpg" width="400" height="300">
 
 ### 2.3 Create a QuPath project
+-------------------------------------
 
 Although it is possible to view and work with single images in QuPath, creating a "Project" makes saving and reloading data associated with multiple images much more efficient. A QuPath project groups related images to easily switch between them via thumbnails and also organizes associated data files, scripts, and classifiers.
 
@@ -123,6 +125,7 @@ Although it is possible to view and work with single images in QuPath, creating 
 
 
 ### 2.4 View an image
+-------------------------------------
 
 Click the **Image** tab to get a table of properties related to your image.
 <img src="TutorialImages/imageproperties.jpg">
