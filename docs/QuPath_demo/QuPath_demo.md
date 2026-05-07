@@ -12,10 +12,10 @@ This tutorial provides an overview of the basic functionalities of QuPath.
 Specifically, the tutorial covers the following:
 - Creating a QuPath project
 - Viewing pyramidal files
-- Setting channel names
-- Annotating regions of interest
-- Detecting cells in the regions of interest
-- Performing measurements on detected cells and exporting the data
+- Setting channel names of images
+- Manually annotating regions of interest
+- Detecting cells in the annotated regions
+- Performing measurements on the detected cells and exporting the data
 
 **Lab Data** in [this folder](https://drive.google.com/drive/folders/1z0FnjmPLGjEnIpPu_P8PTB-4ck6Z9BcA?usp=drive_link) (Originally sourced from [here](https://openslide.cs.cmu.edu/download/openslide-testdata/Hamamatsu/) and [here]((https://openslide.cs.cmu.edu/download/openslide-testdata/Aperio/CMU-1.svs)))
 
@@ -25,13 +25,16 @@ Specifically, the tutorial covers the following:
 
 ### 1.1 What is QuPath?
 
-QuPath is open source software for bioimage analysis created and maintained by Peter Bankhead and his team at The University of Edinburgh. QuPath is commonly used for **digital pathology in research** because it offers a powerful set of tools for working with **whole slide images** - but it can be applied to lots of other kinds of image as well.
+QuPath is an open source software for bioimage analysis created and maintained by Peter Bankhead and his team at The University of Edinburgh. QuPath is commonly used for **digital pathology in research** because it offers a powerful set of tools for working with **whole slide images** - but it can be applied to lots of other kinds of image as well.
 
 Read the [original publication introducing QuPath](https://doi.org/10.1038/s41598-017-17204-5)!
 
-### 1.2 What are pyrmidal file formats?
-- Whole slide images (WSIs) are a crucial part of translational research projects, because they allow studying changes in individual tissue structure in health or disease the context of the parent organ
-- WSIs are often > 10GB and contain billions of pixels, and are commonly stored in a pyramidal file format
+QuPath provides powerful tools for **annotation, visualization, and image analysis** through an easy-to-use modern interface. It includes built-in algorithms for cell and tissue detection, interactive machine learning for object and pixel classification, and supports many image formats, including whole-slide and multiplexed images. It also integrates with tools like ImageJ, OpenCV, OMERO, StarDist, InstanSeg, and Bio-Formats, and the functionalities can be expanded using Groovy scripts and extensions. Many of these functionalities are beyond the scope of this tutorial -- if you are interested, [QuPath docs](https://qupath.readthedocs.io/en/stable/docs/tutorials/index.html) and these videos/channels ([1](https://www.youtube.com/playlist?list=PLlGXRBscPbCCA1yGCThNqdYKgTPOvjigp), [2](https://www.youtube.com/playlist?list=PLSCpSsEmyRpANBGQXB_oGslW9NIJz4A12), [3](https://www.youtube.com/playlist?list=PL4ta8RxZklWkPB_pwW-ZDVAGPGktAlE5Y)) are great resources to delve into!
+
+
+### 1.2 What are pyramidal file formats?
+- Whole slide images (WSIs) are a crucial component of translational research focussing on Histopathology, because they allow studying changes in individual tissue structure in health or disease the context of the parent organ
+- WSIs tend to be of substantial size, often > 10GB, and contain billions of pixels -- so these are commonly stored in a pyramidal file format
 - A pyramidal file format stores images at multiple resolutions in a single file, organized in a pyramid-like hierarchy(highest resolution at the base, progressively lower resolutions above).
 - This optimizes performance for viewing, processing, and analyzing large images without needing to load the entire high-res image into memory.
 - Common Use Cases:
@@ -61,7 +64,14 @@ Requires specialized software for reading/writing
 
 ## 2. Exercise steps
 
-### 2.1 Launch QuPath
+
+### 2.1 Install QuPath
+
+
+
+### 2.2 Launch QuPath
+
+Click on the QuPath icon.
 The welcome screen links to QuPath documentation, forum.image.sc, and the source code
 
 <img src="TutorialImages/qupathwelcomescreen.jpg">
