@@ -89,7 +89,7 @@ Although it is possible to view and work with single images in QuPath, creating 
   This can be done by doing either of the following:
   1. Through `File --> Project... --> Create new project`
 
-  <img src="TutorialImages/qupathproject_1.png>
+  <img src="">
 
   <img src="TutorialImages/createproject_1.jpg" width="400" height="200">
 
