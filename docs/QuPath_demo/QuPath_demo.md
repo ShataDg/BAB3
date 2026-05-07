@@ -76,6 +76,7 @@ QuPath provides powerful tools for **annotation, visualization, and image analys
 
 
 ### 2.1 Install QuPath
+-------------------------------------
 
 Please install the latest version from [here](https://qupath.github.io/)
 
@@ -87,6 +88,7 @@ When the QuPath window opens, you will notice the welcome screen, which links to
 <img src="TutorialImages/qupathwelcomescreen.jpg" width="400" height="300">
 
 ### 2.3 Create a QuPath project
+
 Although it is possible to view and work with single images in QuPath, creating a "Project" makes saving and reloading data associated with multiple images much more efficient. A QuPath project groups related images to easily switch between them via thumbnails and also organizes associated data files, scripts, and classifiers.
 
   #### *A. Create a new / choose a project folder*
