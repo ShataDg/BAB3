@@ -7,7 +7,7 @@ Adapted from:
 2. [Pete Bankhead's video tutorial](https://youtu.be/xtjsigsUrms?si=PLyccu1S0xfYJHYN)
 3. [From Samples to Knowledge 2025 Repo](https://saramcardle.github.io/FS2K/README.html)
 
-## Learning Objectives
+## **Learning Objectives**
 This tutorial provides an overview of the basic functionalities of QuPath.
 Specifically, the tutorial covers the following:
 - Creating a QuPath project
@@ -21,7 +21,7 @@ Specifically, the tutorial covers the following:
 
 ---
 
-## 1. Background information
+## **1. Background information**
 
 ### 1.1 What is QuPath?
 
@@ -67,7 +67,13 @@ QuPath provides powerful tools for **annotation, visualization, and image analys
   - tifffile
   - QuPath
 
-## 2. Exercise steps
+## **2. Exercise steps**
+
+ - [2.1 Install QuPath](#21-install-QuPath)
+ - [2.2 Launch QuPath](#22-launch-QuPath)
+ - [2.3 Create a QuPath project](#23-create-a-qupath-project)
+ - [2.4 View an image](#24-view-an-image)
+
 
 ### 2.1 Install QuPath
 
@@ -80,32 +86,33 @@ When the QuPath window opens, you will notice the welcome screen, which links to
 
 <img src="TutorialImages/qupathwelcomescreen.jpg" width="400" height="300">
 
-### 2.2 Create a QuPath project
+### 2.3 Create a QuPath project
 Although it is possible to view and work with single images in QuPath, creating a "Project" makes saving and reloading data associated with multiple images much more efficient. A QuPath project groups related images to easily switch between them via thumbnails and also organizes associated data files, scripts, and classifiers.
 
-  #### A. Create a new / choose a project folder
+  #### *A. Create a new / choose a project folder*
   We start by creating a "project folder", which can be any folder, stored anywhere on your computer, but it **must be empty**.
 
   This can be done by doing either of the following:
-  1. Through `File --> Project... --> Create new project`
+  1. Click on `File`; then `Project` and `Create project`
 
-  <img src="TutorialImages/createproject_1.png">
+  <img src="TutorialImages/createproject_1.png" width="300" height="360" style="margin-left: 40px;">
 
-  <img src="TutorialImages/createproject_2.jpg" width="400" height="200">
+  2. Clicking on the `Create project` button in the analysis pane
 
-  This is how a QuPath project folder can look like:
+  <img src="TutorialImages/createproject_2.jpg" width="250" height="100" style="margin-left: 40px;">
 
-  <img src="TutorialImages/createproject_3.jpg">
+  3. Dragging and dropping the project folder into QuPath
 
+  You can name the project anything you like -- for this example, I have named it `qupath_project`.Once created, this is the contents of a QuPath project folder can look like:
 
-  1. Dragging and dropping the folder into QuPath
+  <img src="TutorialImages/createproject_3.jpg" style="margin-left: 40px;">
 
-  #### B. Add images to your project
+  #### *B. Add images to your project*
   You can add images via `File --> Project... --> Add images`, or, you can drag and drop the images into QuPath. This will open a dialog box, where you can set parameters related to the image being imported.
 
   <img src="TutorialImages/imageparameters.jpg">
 
-### 2.3 View image properties
+### 2.4 View an image
 
 Click the **Image** tab to get a table of properties related to your image.
 <img src="TutorialImages/imageproperties.jpg">
