@@ -147,6 +147,8 @@ Although it is possible to view and work with single images in QuPath, creating 
 ### 2.5 View an image
 -------------------------------------
 
+Once you have imported the image(s) to your project, you will see the name(s) of the image in the analysis pane (red box), and the image in the image viewer. 
+
 Click the **Image** tab to get a table of properties related to your image.
 <img src="TutorialImages/imageproperties.jpg">
 
