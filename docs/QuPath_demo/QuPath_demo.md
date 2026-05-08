@@ -121,7 +121,7 @@ Although it is possible to view and work with single images in QuPath, creating 
   
   When you import the image, a dialog box will open where you can set parameters related to the image being imported, as shown below.
 
-  <img src="TutorialImages/importimage.png" width="300" height="400" style="margin-left: 40px;">
+  <img src="TutorialImages/importimage.png" width="400" height="500" style="margin-left: 40px;">
 
   Once the image(s) have been added to your project, you will see some folders created in your project folder.
 
@@ -141,7 +141,7 @@ Although it is possible to view and work with single images in QuPath, creating 
 
   ```
 
-  <img src="TutorialImages/createproject_4.jpg" width="150" height="100" style="margin-left: 40px;">
+  <img src="TutorialImages/createproject_4.jpg" width="250" height="200" style="margin-left: 40px;">
 
 
 ### 2.5 View an image
