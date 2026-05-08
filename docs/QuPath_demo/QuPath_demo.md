@@ -123,8 +123,25 @@ Although it is possible to view and work with single images in QuPath, creating 
 
   <img src="TutorialImages/importimage.png" width="300" height="400" style="margin-left: 40px;">
 
+  Once the image(s) have been added to your project, you will see some folders created in your project folder.
 
-  <img src="TutorialImages/createproject_4.jpg" width="250" height="100" style="margin-left: 40px;">
+  ```
+  qupath_project
+  ├── classifiers
+  │   └── classes.json
+  ├── data
+  │   ├── 1
+  │   │   ├── data.qpdata
+  │   │   ├── server.json
+  │   │   ├── summary.json
+  │   │   └── thumbnail.jpg
+  │   └── metadata.json
+  ├── project.qpproj
+  └── project.qpproj.backup
+
+  ```
+
+  <img src="TutorialImages/createproject_4.jpg" width="150" height="100" style="margin-left: 40px;">
 
 
 ### 2.5 View an image
