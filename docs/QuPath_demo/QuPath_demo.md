@@ -147,19 +147,39 @@ Although it is possible to view and work with single images in QuPath, creating 
 ### 2.5 View an image
 -------------------------------------
 
+### 2.5.1 Viewing, zooming in and out, panning
+
 Once you have imported the image(s) to your project, you will see the name(s) of these image(s) in the analysis pane (red box), and the image in the image viewer.
 
 <img src="TutorialImages/imageviewer_1.png" width="700" height="400">
 
-Click the **Image** tab to get a table of properties related to your image.
-<img src="TutorialImages/imageproperties.jpg">
+In the viewer pane, you will notice the following:
+
+1. Slide overview
+2. X and Y co-ordinates
+3. Scale bar
 
 
 The **scroll wheel** of your mouse (or equivalent scrolling motion on a trackpad) can be used to **zoom in and out** of an image within QuPath.
 You can visualize the different stains in your image individually by clicking `View --> Brightness and Contrast` and choose the specific stains / channels to view
 <img src="TutorialImages/imagedisplay.jpg">
 
-### 2.4 Annotate regions of interest
+### 2.5.2 Set stains
+
+Click the **Image** tab to get a table of properties related to your image.
+<img src="TutorialImages/imageproperties.jpg">
+
+
+### 2.5.3 Export images
+
+
+
+
+
+
+
+### 2.6 Annotate regions of interest
+-------------------------------------
 **Annotation objects** can be created by drawing specific shapes on the image, using rectangle / circle / polygon tools. One can also use the brush tools to draw custom shapes. This can be done by selecting the tool, clicking on the image, and dragging the mouse. Creating annotation objects allows us to define regions within which we can perform detections. Right-clicking on an annotation "locks" it, and prevents it from getting accidentally deleted. One can make annotations of different classes in QuPath and information regarding the class to which the annotation belongs can be entered by right clicking on the annotated area, and then clicking on `Set Classification`.
 
 <img src="TutorialImages/annotations_1.jpg">
