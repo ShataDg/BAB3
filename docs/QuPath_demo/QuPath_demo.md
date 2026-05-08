@@ -93,7 +93,6 @@ When the QuPath window opens, you will notice the welcome screen, which links to
 
 Although it is possible to view and work with single images in QuPath, creating a "Project" makes saving and reloading data associated with multiple images much more efficient. A QuPath project groups related images to easily switch between them via thumbnails and also organizes associated data files, scripts, and classifiers.
 
-  #### *A. Create a new / choose a project folder*
   We start by creating a "project folder", which can be any folder, stored anywhere on your computer, but it **must be empty**.
 
   This can be done by doing either of the following:
@@ -109,9 +108,12 @@ Although it is possible to view and work with single images in QuPath, creating 
   You will notice the project name will appear in the analysis pane.
 
   <img src="TutorialImages/createproject_3.png" width="270" height="100" style="margin-left: 40px;">
-  
-  #### *B. Add images to your project*
-  You can add images via `File --> Project --> Add images`, or, you can drag and drop the images into QuPath. 
+
+### 2.4 Add images to your QuPath project
+-------------------------------------
+
+  You can add images via `File --> Project --> Add images`. If you have not created a project and just want to open an image, you can also click on `File --> Open`. 
+  Alternatively, you can drag and drop your images into QuPath -- this might be the more efficient option if you are working with a multiple images.
   
   <img src="TutorialImages/addimage_1.png" width="300" height="400" style="margin-left: 40px;">
 
@@ -119,13 +121,13 @@ Although it is possible to view and work with single images in QuPath, creating 
   
   When you import the image, a dialog box will open where you can set parameters related to the image being imported, as shown below.
 
-  <img src="TutorialImages/importimage.png">
+  <img src="TutorialImages/importimage.png" width="300" height="400" style="margin-left: 40px;">
 
 
   <img src="TutorialImages/createproject_4.jpg" width="250" height="100" style="margin-left: 40px;">
 
 
-### 2.4 View an image
+### 2.5 View an image
 -------------------------------------
 
 Click the **Image** tab to get a table of properties related to your image.
