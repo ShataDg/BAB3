@@ -188,16 +188,15 @@ This is a good time to familiarize yourself with the options available under the
 
 ### **2.5.2 Zooming and panning**
 
-
-
-
-
-
-
-
-
-
 The **scroll wheel** of your mouse (or equivalent scrolling motion on a trackpad) can be used to **zoom in and out** of an image within QuPath.
+
+Alternatively, you can click on `View` and `Zoom` to zoom in or out, or to zoom to specific magnifications (e.g. 400%)
+
+<img src="TutorialImages/zoomimage.png" width="350" height="400" style="margin-left: 40px;">
+
+
+
+
 You can visualize the different stains in your image individually by clicking `View --> Brightness and Contrast` and choose the specific stains / channels to view
 <img src="TutorialImages/imagedisplay.jpg">
 
@@ -208,6 +207,8 @@ Click the **Image** tab to get a table of properties related to your image.
 
 
 ### 2.5.3 Export images
+
+
 
 ⚠️ **Tip:** You can change the appearance of the scalebar by clicking `Edit --> Preferences` and changing the parameters for Scalebar under the Viewer tab. The screenshot below shows the default parameters and appearance of the scalebar when default parameters are used.
 
@@ -220,17 +221,6 @@ You can always change the Scalebar font size, font weight and thickness accordin
 <img src="TutorialImages/imageviewer_5.png" width="700" height="500" style="margin-left: 40px;">
 
 <img src="TutorialImages/imageviewer_6.png" width="200" height="200" style="margin-left: 40px;">
-
-
-
-
-
-
-
-
-
-
-
 
 
 
