@@ -169,7 +169,7 @@ Clicking on `Apply changes` will update the project with the new file paths!
 ### **2.5 View images**
 -------------------------------------
 
-### **2.5.1 Customizing the viewer**
+#### **2.5.1 Customizing the viewer**
 
 Once you have imported the image(s) to your project, you will see the name(s) of these image(s) in the analysis pane (red box), and the image in the image viewer.
 
@@ -186,7 +186,7 @@ This is a good time to familiarize yourself with the options available under the
 <img src="TutorialImages/imageviewer_2.png" width="200" height="700" style="margin-left: 40px;">
 
 
-### **2.5.2 Zooming and panning**
+#### **2.5.2 Zooming and panning**
 
 The **scroll wheel** of your mouse (or equivalent scrolling motion on a trackpad) can be used to **zoom in and out** of an image within QuPath.
 
@@ -200,7 +200,7 @@ You can pan the image with the move tool (red box) and clicking on the magnifyin
 
 <img src="TutorialImages/panimage.png" width="900" height="50" style="margin-left: 40px;">
 
-### 2.5.2 Separate stains
+#### **2.5.3 Separate stains**
 
 You can visualize the different stains in your image individually by clicking `View --> Brightness and Contrast` and choose the specific stains / channels to view
 <img src="TutorialImages/imagedisplay.jpg">
@@ -209,7 +209,7 @@ Click the **Image** tab to get a table of properties related to your image.
 <img src="TutorialImages/imageproperties.jpg">
 
 
-### 2.5.3 Export images
+#### **2.5.4 Export images**
 
 
 
@@ -228,9 +228,14 @@ You can always change the Scalebar font size, font weight and thickness accordin
 
 
 
-### 2.6 Annotate regions of interest
+### **2.6 Annotate regions of interest**
 -------------------------------------
 **Annotation objects** can be created by drawing specific shapes on the image, using rectangle / circle / polygon tools. One can also use the brush tools to draw custom shapes. This can be done by selecting the tool, clicking on the image, and dragging the mouse. Creating annotation objects allows us to define regions within which we can perform detections. Right-clicking on an annotation "locks" it, and prevents it from getting accidentally deleted. One can make annotations of different classes in QuPath and information regarding the class to which the annotation belongs can be entered by right clicking on the annotated area, and then clicking on `Set Classification`.
+
+
+#### 2.6.1 Draw annotations
+
+
 
 <img src="TutorialImages/annotations_1.jpg">
 
@@ -238,12 +243,15 @@ You can always change the Scalebar font size, font weight and thickness accordin
 <img src="TutorialImages/annotations_2.jpg">
 
 
-### 2.5 View annotation measurements
+#### 2.6.2 View annotation measurements
+
 Within the **Analysis panel**, below the annotation list you should see a table showing measurements for the currently selected object. This updates automatically if another annotation is selected. Alternatively, you can click on `Measure --> Show annotation measurements`, and a table will pop-up showing the annotation measurements.
 
 <img src="TutorialImages/annotation_measurements.jpg" alt="alt text">
 
-### 2.6 Detect cells
+### 2.7 Cell detection
+-------------------------------
+
 For this step, we will use the OS-2.ndpi image.
 We will first open the image and annoate a region of interest.
 Next, we will try to detect all the cells in the annotated area, and also obtain a count of cells that are positive for DAB-staining.
@@ -260,7 +268,7 @@ The Annotations pane will show the count of all cells, positive cells and negati
 We can also visualize the detections as a heatmap overlaid on the image by clicking `Measure --> Show measurement maps`
 <img src="TutorialImages/cell_detection_4.jpg">
 
-### 2.7 Classify cells
+#### 2.7.1 Positive cell detection
 We can next assign the positive cells that were detected to specific areas in the tissue, e.g. tumor or stroma. This can help us compare the counts or other characteristics of the positive cells in the tumoral or the stromal regions.
 For this, we first annotate some regions within our region of interest as 'tumor' or 'stroma', and train the classifier `Classify --> Object classification --> Train object classifier`
 <img src="TutorialImages/classification_1.jpg">
@@ -268,7 +276,7 @@ For this, we first annotate some regions within our region of interest as 'tumor
 We will now get the measurement of the positive cells stratified into the classes (tumor/stroma) that we set.
 <img src="TutorialImages/classification_2.jpg">
 
-### 2.8 Perform and export measurements
+#### 2.7.2 Perform and export measurements
 QuPath makes some basic measuerements of the annotations and detections by default if no additional instruction is provided. However, more granular or more advanced measurements can also be made by clicking on `Analyze --> Calculate features` and then selecting the features that you would want to extract.
 <img src="TutorialImages/measurement_1.jpg">
 
@@ -277,6 +285,7 @@ These measurements can also be viewed as a heatmap overlaid on the image by clic
 
 <img src="TutorialImages/measurement_3.jpg">
 
+#### 2.7.3 Visualize data on the image
 
 Finally, we export the measurements, by clicking `Measure --> Export measurements`  and selecting the measurements we want to export (e.g. measurements for all images / some images, annotation measurements, detection measurements) and also the file format in which we would want the measurements saved (e.g. .csv, .tsv)
 
