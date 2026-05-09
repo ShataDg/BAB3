@@ -185,7 +185,6 @@ This is a good time to familiarize yourself with the options available under the
 
 <img src="TutorialImages/imageviewer_2.png" width="200" height="700">
 
-⚠️ **Tip:** Scalebar
 
 ### **2.5.2 Zooming and panning**
 
@@ -210,7 +209,7 @@ Click the **Image** tab to get a table of properties related to your image.
 
 ### 2.5.3 Export images
 
-
+⚠️ **Tip:** You can change the appearance of the scalebar by clicking on the gear icon 
 
 
 
