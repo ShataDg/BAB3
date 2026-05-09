@@ -19,11 +19,12 @@ Specifically, the tutorial covers the following:
 
 **Lab Data** in [this folder](https://drive.google.com/drive/folders/1z0FnjmPLGjEnIpPu_P8PTB-4ck6Z9BcA?usp=drive_link) (Originally sourced from [here](https://openslide.cs.cmu.edu/download/openslide-testdata/Hamamatsu/) and [here]((https://openslide.cs.cmu.edu/download/openslide-testdata/Aperio/CMU-1.svs)))
 
----
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ## **1. Background information**
 
-### 1.1 What is QuPath?
+### **1.1 What is QuPath?**
+-------------------------------------
 
 QuPath is an open source software for bioimage analysis created and maintained by Peter Bankhead and his team at The University of Edinburgh. QuPath is commonly used for **digital pathology in research** because it offers a powerful set of tools for working with **whole slide images** - but it can be applied to lots of other kinds of image as well.
 
@@ -32,7 +33,8 @@ Read the [original publication introducing QuPath](https://doi.org/10.1038/s4159
 QuPath provides powerful tools for **annotation, visualization, and image analysis** through an easy-to-use modern interface. It includes built-in algorithms for cell and tissue detection, interactive machine learning for object and pixel classification, and supports many image formats, including whole-slide and multiplexed images. It also integrates with tools like ImageJ, OpenCV, OMERO, StarDist, InstanSeg, and Bio-Formats, and the functionalities can be expanded using Groovy scripts and extensions. Many of these functionalities are beyond the scope of this tutorial -- if you are interested, [QuPath docs](https://qupath.readthedocs.io/en/stable/docs/tutorials/index.html) and these videos/channels ([1](https://www.youtube.com/playlist?list=PLlGXRBscPbCCA1yGCThNqdYKgTPOvjigp), [2](https://www.youtube.com/playlist?list=PLSCpSsEmyRpANBGQXB_oGslW9NIJz4A12), [3](https://www.youtube.com/playlist?list=PL4ta8RxZklWkPB_pwW-ZDVAGPGktAlE5Y)) are great resources to delve into!
 
 
-### 1.2 What are pyramidal file formats?
+### **1.2 What are pyramidal file formats?**
+-------------------------------------
 - Whole slide images (WSIs) are a crucial component of translational research focussing on Histopathology, because they allow comparing changes in diseased tissue with healthy tissue, which are often present on the same slide. Additionally, they also allow quantifying parameters of prognostic significance, such as depth of invasion of tumors
 - WSIs contain a wealth of information -- and billions of pixels -- so these tend to be of substantial size, often exceeding 10 GB
 - To make viewing, processing, and analysis more efficient, WSIs are commonly stored in pyramidal file formats
@@ -67,20 +69,22 @@ QuPath provides powerful tools for **annotation, visualization, and image analys
   - tifffile
   - QuPath
 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 ## **2. Exercise steps**
 
  - [2.1 Install QuPath](#21-install-QuPath)
  - [2.2 Launch QuPath](#22-launch-QuPath)
  - [2.3 Create a QuPath project](#23-create-a-qupath-project)
- - [2.4 View an image](#24-view-an-image)
+ - [2.4 Add or remove images to your QuPath project](#24-add-or-remove-images-to-your-qupath-project)
 
 
-### 2.1 Install QuPath
+### **2.1 Install QuPath**
 -------------------------------------
 
 Please install the latest version from [here](https://qupath.github.io/)
 
-### 2.2 Launch QuPath
+### **2.2 Launch QuPath**
 -------------------------------------
 
 Click on the QuPath icon, and wait for QuPath to launch.
@@ -88,7 +92,7 @@ When the QuPath window opens, you will notice the welcome screen, which links to
 
 <img src="TutorialImages/qupathwelcomescreen.jpg" width="400" height="300">
 
-### 2.3 Create a QuPath project
+### **2.3 Create a QuPath project**
 -------------------------------------
 
 Although it is possible to view and work with single images in QuPath, creating a "Project" makes saving and reloading data associated with multiple images much more efficient. A QuPath project groups related images to easily switch between them via thumbnails and also organizes associated data files, scripts, and classifiers.
@@ -104,14 +108,15 @@ Although it is possible to view and work with single images in QuPath, creating 
 
   3. Dragging and dropping the project folder into QuPath
 
-  You can name the project anything you like -- for this tutorial, I have named it `qupath_project`.
-  You will notice the project name will appear in the analysis pane.
+  You can name the project anything you like -- for this tutorial, I have named it `qupath_project`. Once the project is created, the project name will appear in the analysis pane.
 
   <img src="TutorialImages/createproject_3.png" width="270" height="100" style="margin-left: 40px;">
 
-### 2.4 Add images to your QuPath project
+### **2.4 Add or remove images to your QuPath project**
 -------------------------------------
 
+#### **2.4.1 Adding images**
+  
   You can add images via `File --> Project --> Add images`. If you have not created a project and just want to open an image, you can also click on `File --> Open`. 
   Alternatively, you can drag and drop your images into QuPath -- this might be the more efficient option if you are working with a multiple images.
   
@@ -121,8 +126,11 @@ Although it is possible to view and work with single images in QuPath, creating 
   
   When you import the image, a dialog box will open where you can set parameters related to the image being imported, as shown below.
 
-  <img src="TutorialImages/importimage.png" width="400" height="500" style="margin-left: 40px;">
+  <img src="TutorialImages/importimage.png" width="350" height="500" style="margin-left: 40px;">
 
+  The image `CMU-1.ndpi` is a brightfield, H&E image, so we set the image type accordingly, and leave all other parameters unchanged, because we do not want to rotate the image right now, and there are no objects to import along with the image.
+  
+  
   Once the image(s) have been added to your project, you will see some folders created in your project folder.
 
   ```
@@ -142,6 +150,12 @@ Although it is possible to view and work with single images in QuPath, creating 
   ```
 
   <img src="TutorialImages/createproject_4.jpg" width="250" height="200" style="margin-left: 40px;">
+
+#### **2.4.2 Removing images**
+
+
+
+
 
 
 ### 2.5 View an image
