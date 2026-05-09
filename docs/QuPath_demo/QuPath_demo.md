@@ -153,9 +153,16 @@ Although it is possible to view and work with single images in QuPath, creating 
 
 #### **2.4.2 Removing images**
 
+To remove an image, right-click on the image thumbnail in the analysis pane, and select `Remove image`. 
 
+<img src="TutorialImages/removeimage_1.png" width="350" height="400" style="margin-left: 40px;">
 
+⚠️ **Tip:** If your project has only once image, or if you have added only one image to your project and want to remove it, make sure to close the viewer by right-clicking anywhere in the viewer, and clicking on `Multi-view.. --> Close viewer`.
 
+<img src="TutorialImages/removeimage_2.png" width="570" height="400" style="margin-left: 40px;">
+
+⚠️ **Tip:** QuPath projects usually do not contain the images, but saves the path where your images are located. If you change the location of the images since creating the project, QuPath may have trouble finding the images when you re-open your project. QuPath does try to help by providing a dialogue box highlighting the paths that are missing and providing some suggestions of file paths where it thinks the images might be located. This dialogue box will also have a `Search…` button, with which you can set the new directory where the images are now located.
+Clicking on `Apply changes` will update the project with the new file paths!
 
 
 ### 2.5 View an image
