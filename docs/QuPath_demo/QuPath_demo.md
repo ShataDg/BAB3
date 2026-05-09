@@ -169,7 +169,7 @@ Clicking on `Apply changes` will update the project with the new file paths!
 ### **2.5 View images**
 -------------------------------------
 
-### 2.5.1 Viewing, zooming in and out, panning
+### **2.5.1 Customizing the viewer**
 
 Once you have imported the image(s) to your project, you will see the name(s) of these image(s) in the analysis pane (red box), and the image in the image viewer.
 
@@ -181,10 +181,13 @@ In the viewer pane, you will notice the following:
 2. X and Y co-ordinates and pixel values for the channels in the image (red arrow)
 3. Scale bar (green box)
 
-This is a good time to familiarize yourself with the options available under the `View` button. You will notice options to toggle on or off the slide overview, analysis pane, scale bar and so on.
+This is a good time to familiarize yourself with the options available under the `View` button. You will notice that there are options to toggle on or off the slide overview, analysis pane, scale bar and so on.
 
-<img src="TutorialImages/imageviewer_1.png" width="700" height="400">
+<img src="TutorialImages/imageviewer_2.png" width="200" height="700">
 
+⚠️ **Tip:** Scalebar
+
+### **2.5.2 Zooming and panning**
 
 
 
