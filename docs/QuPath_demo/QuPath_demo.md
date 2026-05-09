@@ -77,6 +77,7 @@ QuPath provides powerful tools for **annotation, visualization, and image analys
  - [2.2 Launch QuPath](#22-launch-QuPath)
  - [2.3 Create a QuPath project](#23-create-a-qupath-project)
  - [2.4 Add or remove images to your QuPath project](#24-add-or-remove-images-to-your-qupath-project)
+ - [2.5 View images](#25-view-images)
 
 
 ### **2.1 Install QuPath**
@@ -165,7 +166,7 @@ To remove an image, right-click on the image thumbnail in the analysis pane, and
 Clicking on `Apply changes` will update the project with the new file paths!
 
 
-### 2.5 View an image
+### **2.5 View images**
 -------------------------------------
 
 ### 2.5.1 Viewing, zooming in and out, panning
@@ -176,9 +177,22 @@ Once you have imported the image(s) to your project, you will see the name(s) of
 
 In the viewer pane, you will notice the following:
 
-1. Slide overview
-2. X and Y co-ordinates
-3. Scale bar
+1. Slide overview (green arrow)
+2. X and Y co-ordinates and pixel values for the channels in the image (red arrow)
+3. Scale bar (green box)
+
+This is a good time to familiarize yourself with the options available under the `View` button. You will notice options to toggle on or off the slide overview, analysis pane, scale bar and so on.
+
+<img src="TutorialImages/imageviewer_1.png" width="700" height="400">
+
+
+
+
+
+
+
+
+
 
 
 The **scroll wheel** of your mouse (or equivalent scrolling motion on a trackpad) can be used to **zoom in and out** of an image within QuPath.
