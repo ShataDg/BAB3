@@ -194,13 +194,16 @@ Alternatively, you can click on `View` and `Zoom` to zoom in or out, or to zoom 
 
 <img src="TutorialImages/zoomimage.png" width="350" height="400" style="margin-left: 40px;">
 
+⚠️ **Tip:** You can also navigate to a specific part of the WSI by clicking on that area in the slide overview window. 
 
+You can pan the image with the move tool (red box) and clicking on the magnifying glass icon (green box) will fit the image to the viewer.
 
+<img src="TutorialImages/panimage.png" width="900" height="50" style="margin-left: 40px;">
+
+### 2.5.2 Separate stains
 
 You can visualize the different stains in your image individually by clicking `View --> Brightness and Contrast` and choose the specific stains / channels to view
 <img src="TutorialImages/imagedisplay.jpg">
-
-### 2.5.2 Set stains
 
 Click the **Image** tab to get a table of properties related to your image.
 <img src="TutorialImages/imageproperties.jpg">
