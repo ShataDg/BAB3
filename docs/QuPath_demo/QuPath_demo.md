@@ -160,7 +160,7 @@ To remove an image, right-click on the image thumbnail in the analysis pane, and
 
 ⚠️ **Tip:** If your project has only once image, or if you have added only one image to your project and want to remove it, make sure to close the viewer by right-clicking anywhere in the viewer, and clicking on `Multi-view.. --> Close viewer`.
 
-<img src="TutorialImages/removeimage_2.png" width="570" height="400" style="margin-left: 40px;">
+<img src="TutorialImages/removeimage_2.png" width="540" height="400" style="margin-left: 40px;">
 
 ⚠️ **Tip:** QuPath projects usually do not contain the images, but saves the path where your images are located. If you change the location of the images since creating the project, QuPath may have trouble finding the images when you re-open your project. QuPath does try to help by providing a dialogue box highlighting the paths that are missing and providing some suggestions of file paths where it thinks the images might be located. This dialogue box will also have a `Search…` button, with which you can set the new directory where the images are now located.
 Clicking on `Apply changes` will update the project with the new file paths!
@@ -173,7 +173,7 @@ Clicking on `Apply changes` will update the project with the new file paths!
 
 Once you have imported the image(s) to your project, you will see the name(s) of these image(s) in the analysis pane (red box), and the image in the image viewer.
 
-<img src="TutorialImages/imageviewer_1.png" width="700" height="400">
+<img src="TutorialImages/imageviewer_1.png" width="700" height="400" style="margin-left: 40px;">
 
 In the viewer pane, you will notice the following:
 
@@ -183,7 +183,7 @@ In the viewer pane, you will notice the following:
 
 This is a good time to familiarize yourself with the options available under the `View` button. You will notice that there are options to toggle on or off the slide overview, analysis pane, scale bar and so on.
 
-<img src="TutorialImages/imageviewer_2.png" width="200" height="700">
+<img src="TutorialImages/imageviewer_2.png" width="200" height="700" style="margin-left: 40px;">
 
 
 ### **2.5.2 Zooming and panning**
@@ -209,7 +209,27 @@ Click the **Image** tab to get a table of properties related to your image.
 
 ### 2.5.3 Export images
 
-⚠️ **Tip:** You can change the appearance of the scalebar by clicking on the gear icon 
+⚠️ **Tip:** You can change the appearance of the scalebar by clicking `Edit --> Preferences` and changing the parameters for Scalebar under the Viewer tab. The screenshot below shows the default parameters and appearance of the scalebar when default parameters are used.
+
+<img src="TutorialImages/imageviewer_4.png" width="600" height="500" style="margin-left: 40px;">
+
+<img src="TutorialImages/imageviewer_3.png" width="200" height="200" style="margin-left: 40px;">
+
+You can always change the Scalebar font size, font weight and thickness according to your preference, as shown below, and the changes will be reflected in the scalebar in the viewer.
+
+<img src="TutorialImages/imageviewer_5.png" width="700" height="500" style="margin-left: 40px;">
+
+<img src="TutorialImages/imageviewer_6.png" width="200" height="200" style="margin-left: 40px;">
+
+
+
+
+
+
+
+
+
+
 
 
 
