@@ -233,12 +233,13 @@ We then click on `Analyze --> Estimate stain vectors` and then `Yes`
 
 <img src="TutorialImages/setimageproperties_10.png" width="700" height="700" style="margin-left: 40px;">
 
-QuPath will then show the 3D relationship between the red, green, and blue pixels in the image in 2D scatterplots. 
+QuPath will then show the 3D relationship between the red, green, and blue pixels in the image as 2D scatterplots, and also indicates the existing stain vectors with colored lines.
 
 <img src="TutorialImages/setimageproperties_11.png" width="700" height="600" style="margin-left: 40px;">
 
+The scatterplots help assess whether the stain vectors match the pixel colors in the selected region. Ideally, the vectors should closely align with most of the scattered points.
 
-
+If the vectors are not well aligned, the `Auto` option can estimate improved stain vectors from the selected region. However, unexpected colors, such as greenish pixels, can distort the estimate. In such cases, adjusting parameters like `Exclude unrecognised colors (HE only)` can help remove irrelevant colors and produce more reliable stain separation.
 
 #### **2.5.4 Zooming and panning**
 
