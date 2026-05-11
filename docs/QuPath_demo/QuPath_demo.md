@@ -211,26 +211,19 @@ The first step to separating the stains in the image is to set the image type ac
 
 The `Brightness and Contrast` button provides many helpful options,e.g.,
 
-    2.1 Viewing one stain at a time
+  *2.1 Viewing one stain at a time*
 <img src="TutorialImages/setimageproperties_5.png" width="700" height="700" style="margin-left: 40px;">
 
 <img src="TutorialImages/setimageproperties_6.png" width="700" height="700" style="margin-left: 40px;">
 
-    2.2 Viewing the image in grayscale
+  *2.2 Viewing the image in grayscale*
 <img src="TutorialImages/setimageproperties_7.png" width="700" height="700" style="margin-left: 40px;">
 
-    2.3 Inverting the colors of the image
+  *2.3 Inverting the colors of the image*
 
 <img src="TutorialImages/setimageproperties_8.png" width="700" height="700" style="margin-left: 40px;">
 
-
-
-
-
-
-
-
-
+3. 
 
 #### **2.5.4 Zooming and panning**
 
