@@ -79,6 +79,8 @@ QuPath provides powerful tools for **annotation, visualization, and image analys
  - [2.4 Add or remove images to your QuPath project](#24-add-or-remove-images-to-your-qupath-project)
  - [2.5 View and export images](#25-view-images)
  - [2.6 Set up image properties](#26-set-up-image-properties)
+ - [2.7 Create annotations](#27-create-annotations)
+ - [2.8 Cell detection and Positive cell detection](#28-cell-detection-and-positive-cell-detection)
 
 
 ### **2.1 Install QuPath**
@@ -218,10 +220,9 @@ If you select `Original pixels`, you will be provided a list of available file f
 
 Selecting `Rendered RGB (with overlays)` exports the image as it appears in the QuPath viewer, including overlays. Please remember that because the image is converted to RGB, the exported pixel values may not match the original data. This option is therefore suitable for preparing figures, but not for downstream quantitative analysis.
 
-The `Export snapshot` button also includes two additional options that allow more of the QuPath interface to be exported, such as toolbars and panels.
+The `Export snapshot` button includes two additional options that allow more of the QuPath interface to be exported, such as toolbars and panels.
 
 <img src="TutorialImages/exportimage_4.png" width="400" height="450" style="margin-left: 40px;">
-
 
 ⚠️ **Tip:** You can change the appearance of the scalebar by clicking `Edit --> Preferences` and changing the parameters for Scalebar under the Viewer tab. The screenshot below shows the default parameters and appearance of the scalebar when default parameters are used.
 
@@ -296,7 +297,7 @@ These scatterplots help assess whether the stain vectors match the pixel colors 
 If the vectors are not well aligned, the `Auto` option can estimate improved stain vectors from the selected region. However, unexpected colors, such as greenish pixels, can distort the estimate. In such cases, adjusting parameters like `Exclude unrecognised colors (H&E only)` can help remove irrelevant colors and produce more reliable stain separation.
 
 
-### **2.7 Annotate regions of interest**
+### **2.7 Create annotations**
 -------------------------------------
 **Annotation objects** can be created by drawing specific shapes on the image, using rectangle / circle / polygon tools. One can also use the brush tools to draw custom shapes. This can be done by selecting the tool, clicking on the image, and dragging the mouse. Creating annotation objects allows us to define regions within which we can perform detections. Right-clicking on an annotation "locks" it, and prevents it from getting accidentally deleted. One can make annotations of different classes in QuPath and information regarding the class to which the annotation belongs can be entered by right clicking on the annotated area, and then clicking on `Set Classification`.
 
@@ -317,7 +318,7 @@ Within the **Analysis panel**, below the annotation list you should see a table 
 
 <img src="TutorialImages/annotation_measurements.jpg" alt="alt text">
 
-### 2.8 Cell detection
+### **2.8 Cell detection and Positive cell detection**
 -------------------------------
 
 For this step, we will use the OS-2.ndpi image.
