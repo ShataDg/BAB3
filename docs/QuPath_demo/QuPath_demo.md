@@ -77,7 +77,8 @@ QuPath provides powerful tools for **annotation, visualization, and image analys
  - [2.2 Launch QuPath](#22-launch-QuPath)
  - [2.3 Create a QuPath project](#23-create-a-qupath-project)
  - [2.4 Add or remove images to your QuPath project](#24-add-or-remove-images-to-your-qupath-project)
- - [2.5 View images](#25-view-images)
+ - [2.5 View and export images](#25-view-images)
+ - [2.6 Set up image properties](#26-set-up-image-properties)
 
 
 ### **2.1 Install QuPath**
@@ -166,7 +167,7 @@ To remove an image, right-click on the image thumbnail in the analysis pane, and
 Clicking on `Apply changes` will update the project with the new file paths!
 
 
-### **2.5 View images**
+### **2.5 View and export images**
 -------------------------------------
 
 #### **2.5.1 Customize the viewer**
@@ -185,7 +186,44 @@ This is a good time to familiarize yourself with the options available under the
 
 <img src="TutorialImages/imageviewer_2.png" width="200" height="700" style="margin-left: 40px;">
 
-#### **2.5.2 Set the image type and image properties**
+
+#### **2.5.2 Zooming and panning**
+
+The **scroll wheel** of your mouse (or equivalent scrolling motion on a trackpad) can be used to **zoom in and out** of an image within QuPath.
+
+Alternatively, you can click on `View` and `Zoom` to zoom in or out, or to zoom to specific magnifications (e.g. 400%)
+
+<img src="TutorialImages/zoomimage.png" width="350" height="400" style="margin-left: 40px;">
+
+⚠️ **Tip:** You can also navigate to a specific part of the WSI by clicking on that area in the slide overview window. 
+
+You can pan the image with the move tool (red box) and clicking on the magnifying glass icon (green box) will fit the image to the viewer.
+
+<img src="TutorialImages/panimage.png" width="900" height="50" style="margin-left: 40px;">
+
+
+#### **2.5.3 Export images**
+
+
+
+
+⚠️ **Tip:** You can change the appearance of the scalebar by clicking `Edit --> Preferences` and changing the parameters for Scalebar under the Viewer tab. The screenshot below shows the default parameters and appearance of the scalebar when default parameters are used.
+
+<img src="TutorialImages/imageviewer_4.png" width="600" height="500" style="margin-left: 40px;">
+
+<img src="TutorialImages/imageviewer_3.png" width="200" height="200" style="margin-left: 40px;">
+
+You can always change the Scalebar font size, font weight and thickness according to your preference, as shown below, and the changes will be reflected in the scalebar in the viewer.
+
+<img src="TutorialImages/imageviewer_5.png" width="600" height="450" style="margin-left: 40px;">
+
+<img src="TutorialImages/imageviewer_6.png" width="200" height="200" style="margin-left: 40px;">
+
+
+### **2.6 Set up image properties**
+-------------------------------------
+
+#### **2.6.1 Set image type**
 
 You will be prompted to set the image type, e.g. Brightfield (H-DAB), Brightfield (H&E), Fluorescence etc. when you add an image to a project.
 
@@ -197,7 +235,7 @@ It is also important to correctly set the pixel size. QuPath does this automatic
 
 <img src="TutorialImages/setimageproperties_2.png" width="600" height="300" style="margin-left: 40px;">
 
-#### **2.5.3 Separate stains**
+#### **2.6.2 Separate stains**
 
 The first step to separating the stains in the image is to set the image type accurately, as described in the section above. For brightfield images, QuPath separates the stains by using [color deconvolution method introduced by Ruifrok and Johnston](https://pubmed.ncbi.nlm.nih.gov/11531144/). Please make sure to check out the [QuPath docs](https://qupath.readthedocs.io/en/stable/docs/tutorials/separating_stains.html) to learn more about color deconvolution in QuPath.
 
@@ -235,52 +273,19 @@ We then click on `Analyze --> Estimate stain vectors` and then `Yes`
 
 QuPath will then show the 3D relationship between the red, green, and blue pixels in the image as 2D scatterplots, and also indicates the existing stain vectors with colored lines.
 
-<img src="TutorialImages/setimageproperties_11.png" width="700" height="600" style="margin-left: 40px;">
+<img src="TutorialImages/setimageproperties_11.png" width="600" height="600" style="margin-left: 40px;">
 
-The scatterplots help assess whether the stain vectors match the pixel colors in the selected region. Ideally, the vectors should closely align with most of the scattered points.
+These scatterplots help assess whether the stain vectors match the pixel colors in the selected region. Ideally, the vectors should closely align with most of the scattered points.
 
-If the vectors are not well aligned, the `Auto` option can estimate improved stain vectors from the selected region. However, unexpected colors, such as greenish pixels, can distort the estimate. In such cases, adjusting parameters like `Exclude unrecognised colors (HE only)` can help remove irrelevant colors and produce more reliable stain separation.
-
-#### **2.5.4 Zooming and panning**
-
-The **scroll wheel** of your mouse (or equivalent scrolling motion on a trackpad) can be used to **zoom in and out** of an image within QuPath.
-
-Alternatively, you can click on `View` and `Zoom` to zoom in or out, or to zoom to specific magnifications (e.g. 400%)
-
-<img src="TutorialImages/zoomimage.png" width="350" height="400" style="margin-left: 40px;">
-
-⚠️ **Tip:** You can also navigate to a specific part of the WSI by clicking on that area in the slide overview window. 
-
-You can pan the image with the move tool (red box) and clicking on the magnifying glass icon (green box) will fit the image to the viewer.
-
-<img src="TutorialImages/panimage.png" width="900" height="50" style="margin-left: 40px;">
+If the vectors are not well aligned, the `Auto` option can estimate improved stain vectors from the selected region. However, unexpected colors, such as greenish pixels, can distort the estimate. In such cases, adjusting parameters like `Exclude unrecognised colors (H&E only)` can help remove irrelevant colors and produce more reliable stain separation.
 
 
-#### **2.5.5 Export images**
-
-
-
-⚠️ **Tip:** You can change the appearance of the scalebar by clicking `Edit --> Preferences` and changing the parameters for Scalebar under the Viewer tab. The screenshot below shows the default parameters and appearance of the scalebar when default parameters are used.
-
-<img src="TutorialImages/imageviewer_4.png" width="600" height="500" style="margin-left: 40px;">
-
-<img src="TutorialImages/imageviewer_3.png" width="200" height="200" style="margin-left: 40px;">
-
-You can always change the Scalebar font size, font weight and thickness according to your preference, as shown below, and the changes will be reflected in the scalebar in the viewer.
-
-<img src="TutorialImages/imageviewer_5.png" width="700" height="500" style="margin-left: 40px;">
-
-<img src="TutorialImages/imageviewer_6.png" width="200" height="200" style="margin-left: 40px;">
-
-
-
-
-### **2.6 Annotate regions of interest**
+### **2.7 Annotate regions of interest**
 -------------------------------------
 **Annotation objects** can be created by drawing specific shapes on the image, using rectangle / circle / polygon tools. One can also use the brush tools to draw custom shapes. This can be done by selecting the tool, clicking on the image, and dragging the mouse. Creating annotation objects allows us to define regions within which we can perform detections. Right-clicking on an annotation "locks" it, and prevents it from getting accidentally deleted. One can make annotations of different classes in QuPath and information regarding the class to which the annotation belongs can be entered by right clicking on the annotated area, and then clicking on `Set Classification`.
 
 
-#### 2.6.1 Draw annotations
+#### 2.7.1 Draw annotations
 
 
 
@@ -290,13 +295,13 @@ You can always change the Scalebar font size, font weight and thickness accordin
 <img src="TutorialImages/annotations_2.jpg">
 
 
-#### 2.6.2 View annotation measurements
+#### 2.7.2 View annotation measurements
 
 Within the **Analysis panel**, below the annotation list you should see a table showing measurements for the currently selected object. This updates automatically if another annotation is selected. Alternatively, you can click on `Measure --> Show annotation measurements`, and a table will pop-up showing the annotation measurements.
 
 <img src="TutorialImages/annotation_measurements.jpg" alt="alt text">
 
-### 2.7 Cell detection
+### 2.8 Cell detection
 -------------------------------
 
 For this step, we will use the OS-2.ndpi image.
@@ -315,7 +320,7 @@ The Annotations pane will show the count of all cells, positive cells and negati
 We can also visualize the detections as a heatmap overlaid on the image by clicking `Measure --> Show measurement maps`
 <img src="TutorialImages/cell_detection_4.jpg">
 
-#### 2.7.1 Positive cell detection
+#### 2.8.1 Positive cell detection
 We can next assign the positive cells that were detected to specific areas in the tissue, e.g. tumor or stroma. This can help us compare the counts or other characteristics of the positive cells in the tumoral or the stromal regions.
 For this, we first annotate some regions within our region of interest as 'tumor' or 'stroma', and train the classifier `Classify --> Object classification --> Train object classifier`
 <img src="TutorialImages/classification_1.jpg">
@@ -323,7 +328,7 @@ For this, we first annotate some regions within our region of interest as 'tumor
 We will now get the measurement of the positive cells stratified into the classes (tumor/stroma) that we set.
 <img src="TutorialImages/classification_2.jpg">
 
-#### 2.7.2 Perform and export measurements
+#### 2.8.2 Perform and export measurements
 QuPath makes some basic measuerements of the annotations and detections by default if no additional instruction is provided. However, more granular or more advanced measurements can also be made by clicking on `Analyze --> Calculate features` and then selecting the features that you would want to extract.
 <img src="TutorialImages/measurement_1.jpg">
 
@@ -332,7 +337,7 @@ These measurements can also be viewed as a heatmap overlaid on the image by clic
 
 <img src="TutorialImages/measurement_3.jpg">
 
-#### 2.7.3 Visualize data on the image
+#### 2.8.3 Visualize data on the image
 
 Finally, we export the measurements, by clicking `Measure --> Export measurements` and selecting the measurements we want to export (e.g. measurements for all images / some images, annotation measurements, detection measurements) and also the file format in which we would want the measurements saved (e.g., .csv, .tsv)
 
