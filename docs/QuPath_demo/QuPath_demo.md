@@ -216,9 +216,11 @@ If you select `Original pixels`, you will be provided a list of available file f
 <img src="TutorialImages/exportimage_3.png" width="500" height="200" style="margin-left: 40px;">
 
 
-Selecting Rendered RGB (with overlays) exports the image as it appears in the QuPath viewer, including overlays. However, because the image is converted to RGB, the exported pixel values may not match the original data. This option is therefore suitable for preparing figures, but not for downstream quantitative analysis.
+Selecting `Rendered RGB (with overlays)` exports the image as it appears in the QuPath viewer, including overlays. Please remember that because the image is converted to RGB, the exported pixel values may not match the original data. This option is therefore suitable for preparing figures, but not for downstream quantitative analysis.
 
-The Export snapshot menu also includes two additional options that allow more of the QuPath interface to be exported, such as toolbars and panels.
+The `Export snapshot` button also includes two additional options that allow more of the QuPath interface to be exported, such as toolbars and panels.
+
+<img src="TutorialImages/exportimage_4.png" width="400" height="450" style="margin-left: 40px;">
 
 
 ⚠️ **Tip:** You can change the appearance of the scalebar by clicking `Edit --> Preferences` and changing the parameters for Scalebar under the Viewer tab. The screenshot below shows the default parameters and appearance of the scalebar when default parameters are used.
