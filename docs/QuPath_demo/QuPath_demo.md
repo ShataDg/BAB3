@@ -116,7 +116,7 @@ Although it is possible to view and work with single images in QuPath, creating 
 ### **2.4 Add or remove images to your QuPath project**
 -------------------------------------
 
-#### **2.4.1 Adding images**
+#### **2.4.1 Add images**
   
   You can add images via `File --> Project --> Add images`. If you have not created a project and just want to open an image, you can also click on `File --> Open`. 
   Alternatively, you can drag and drop your images into QuPath -- this might be the more efficient option if you are working with a multiple images.
@@ -152,7 +152,7 @@ Although it is possible to view and work with single images in QuPath, creating 
 
   <img src="TutorialImages/createproject_4.jpg" width="250" height="200" style="margin-left: 40px;">
 
-#### **2.4.2 Removing images**
+#### **2.4.2 Remove images**
 
 To remove an image, right-click on the image thumbnail in the analysis pane, and select `Remove image`. 
 
@@ -169,7 +169,7 @@ Clicking on `Apply changes` will update the project with the new file paths!
 ### **2.5 View images**
 -------------------------------------
 
-#### **2.5.1 Customizing the viewer**
+#### **2.5.1 Customize the viewer**
 
 Once you have imported the image(s) to your project, you will see the name(s) of these image(s) in the analysis pane (red box), and the image in the image viewer.
 
@@ -185,8 +185,25 @@ This is a good time to familiarize yourself with the options available under the
 
 <img src="TutorialImages/imageviewer_2.png" width="200" height="700" style="margin-left: 40px;">
 
+#### **2.5.2 Set the image type and image properties**
 
-#### **2.5.2 Zooming and panning**
+You will be prompted to set the image type, e.g. Brightfield (H-DAB), Brightfield (H&E), Fluorescence etc. when you add an image to a project.
+
+You can always change this by clicking on `Imgage` in the analysis pane, and then `Image type`. The options for setting the image type will appear in a separate window.
+
+<img src="TutorialImages/setimageproperties_1.png" width="200" height="700" style="margin-left: 40px;">
+
+
+#### **2.5.3 Separate stains**
+
+You can visualize the different stains in your image individually by clicking `View --> Brightness and Contrast` and choose the specific stains / channels to view
+<img src="TutorialImages/imagedisplay.jpg">
+
+Click the **Image** tab to get a table of properties related to your image.
+<img src="TutorialImages/imageproperties.jpg">
+
+
+#### **2.5.4 Zooming and panning**
 
 The **scroll wheel** of your mouse (or equivalent scrolling motion on a trackpad) can be used to **zoom in and out** of an image within QuPath.
 
@@ -200,16 +217,8 @@ You can pan the image with the move tool (red box) and clicking on the magnifyin
 
 <img src="TutorialImages/panimage.png" width="900" height="50" style="margin-left: 40px;">
 
-#### **2.5.3 Separate stains**
 
-You can visualize the different stains in your image individually by clicking `View --> Brightness and Contrast` and choose the specific stains / channels to view
-<img src="TutorialImages/imagedisplay.jpg">
-
-Click the **Image** tab to get a table of properties related to your image.
-<img src="TutorialImages/imageproperties.jpg">
-
-
-#### **2.5.4 Export images**
+#### **2.5.5 Export images**
 
 
 
@@ -287,7 +296,7 @@ These measurements can also be viewed as a heatmap overlaid on the image by clic
 
 #### 2.7.3 Visualize data on the image
 
-Finally, we export the measurements, by clicking `Measure --> Export measurements`  and selecting the measurements we want to export (e.g. measurements for all images / some images, annotation measurements, detection measurements) and also the file format in which we would want the measurements saved (e.g. .csv, .tsv)
+Finally, we export the measurements, by clicking `Measure --> Export measurements` and selecting the measurements we want to export (e.g. measurements for all images / some images, annotation measurements, detection measurements) and also the file format in which we would want the measurements saved (e.g., .csv, .tsv)
 
 <img src="TutorialImages/export_1.jpg">
 
