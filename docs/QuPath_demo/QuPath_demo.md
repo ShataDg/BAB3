@@ -191,7 +191,7 @@ You will be prompted to set the image type, e.g. Brightfield (H-DAB), Brightfiel
 
 You can always change this by clicking on `Imgage` in the analysis pane, and then `Image type`. The options for setting the image type will appear in a separate window.
 
-<img src="TutorialImages/setimageproperties_1.png" width="200" height="700" style="margin-left: 40px;">
+<img src="TutorialImages/setimageproperties_1.png" width="600" height="500" style="margin-left: 40px;">
 
 
 #### **2.5.3 Separate stains**
