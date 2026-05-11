@@ -189,21 +189,29 @@ This is a good time to familiarize yourself with the options available under the
 
 You will be prompted to set the image type, e.g. Brightfield (H-DAB), Brightfield (H&E), Fluorescence etc. when you add an image to a project.
 
-You can always change this by clicking on `Imgage` in the analysis pane, and then `Image type`. The options for setting the image type will appear in a separate window.
+You can always change this by clicking on `Image` in the analysis pane, and then `Image type`. The options for setting the image type will appear in a separate window.
 
-<img src="TutorialImages/setimageproperties_1.png" width="600" height="500" style="margin-left: 40px;">
+<img src="TutorialImages/setimageproperties_1.png" width="650" height="500" style="margin-left: 40px;">
 
 It is also important to correctly set the pixel size. QuPath does this automatically when the image is loaded, but you can also set this manually by clicking on `Pixel width` or `Pixel height` entering the desired values.
 
-
+<img src="TutorialImages/setimageproperties_2.png" width="600" height="300" style="margin-left: 40px;">
 
 #### **2.5.3 Separate stains**
 
-You can visualize the different stains in your image individually by clicking `View --> Brightness and Contrast` and choose the specific stains / channels to view
-<img src="TutorialImages/imagedisplay.jpg">
+The first step to separating the stains in the image is to set the image type accurately, as described in the section above. For brightfield images, QuPath separates the stains by using [color deconvolution method introduced by Ruifrok and Johnston](https://pubmed.ncbi.nlm.nih.gov/11531144/). We will follow the steps described below for the purpose of the tutorial. Please make sure to check out the [QuPath docs](https://qupath.readthedocs.io/en/stable/docs/tutorials/separating_stains.html) to learn more about color deconvolution in QuPath.
 
-Click the **Image** tab to get a table of properties related to your image.
-<img src="TutorialImages/imageproperties.jpg">
+1. Since you set the image type as Brightfield (H&E), you would be able to see the names of the stains, Hematoxylin and Eosin, under the `Image` tab.
+
+<img src="TutorialImages/setimageproperties_3.png" width="350" height="100" style="margin-left: 40px;">
+
+2. You can also visualize the different stains in your image individually by clicking `View --> Brightness and Contrast`.
+
+<img src="TutorialImages/setimageproperties_4.png" width="500" height="700" style="margin-left: 40px;">
+
+
+
+
 
 
 #### **2.5.4 Zooming and panning**
