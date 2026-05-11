@@ -193,6 +193,9 @@ You can always change this by clicking on `Imgage` in the analysis pane, and the
 
 <img src="TutorialImages/setimageproperties_1.png" width="600" height="500" style="margin-left: 40px;">
 
+It is also important to correctly set the pixel size. QuPath does this automatically when the image is loaded, but you can also set this manually by clicking on `Pixel width` or `Pixel height` entering the desired values.
+
+
 
 #### **2.5.3 Separate stains**
 
