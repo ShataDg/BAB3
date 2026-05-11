@@ -199,7 +199,9 @@ It is also important to correctly set the pixel size. QuPath does this automatic
 
 #### **2.5.3 Separate stains**
 
-The first step to separating the stains in the image is to set the image type accurately, as described in the section above. For brightfield images, QuPath separates the stains by using [color deconvolution method introduced by Ruifrok and Johnston](https://pubmed.ncbi.nlm.nih.gov/11531144/). We will follow the steps described below for the purpose of the tutorial. Please make sure to check out the [QuPath docs](https://qupath.readthedocs.io/en/stable/docs/tutorials/separating_stains.html) to learn more about color deconvolution in QuPath.
+The first step to separating the stains in the image is to set the image type accurately, as described in the section above. For brightfield images, QuPath separates the stains by using [color deconvolution method introduced by Ruifrok and Johnston](https://pubmed.ncbi.nlm.nih.gov/11531144/). Please make sure to check out the [QuPath docs](https://qupath.readthedocs.io/en/stable/docs/tutorials/separating_stains.html) to learn more about color deconvolution in QuPath.
+
+We will next follow the steps described below to set up the stain vectors. This is an important step because if the stain vectors are inaccurate, steps that rely on color deconvolution, such as cell detection, may perform poorly because the signals from different stains may not be properly separated.
 
 1. Since you set the image type as Brightfield (H&E), you would be able to see the names of the stains, Hematoxylin and Eosin, under the `Image` tab.
 
@@ -223,7 +225,20 @@ The `Brightness and Contrast` button provides many helpful options,e.g.,
 
 <img src="TutorialImages/setimageproperties_8.png" width="700" height="700" style="margin-left: 40px;">
 
-3. 
+3. Next, we annotate an area of the image that has clear examples of the stains that we want to separate, along with an area of the background. For this, we use the rectangle annotation tool (red box).
+
+<img src="TutorialImages/setimageproperties_9.png" width="700" height="700" style="margin-left: 40px;">
+
+We then click on `Analyze --> Estimate stain vectors` and then `Yes`
+
+<img src="TutorialImages/setimageproperties_10.png" width="700" height="700" style="margin-left: 40px;">
+
+QuPath will then show the 3D relationship between the red, green, and blue pixels in the image in 2D scatterplots. 
+
+<img src="TutorialImages/setimageproperties_11.png" width="700" height="600" style="margin-left: 40px;">
+
+
+
 
 #### **2.5.4 Zooming and panning**
 
