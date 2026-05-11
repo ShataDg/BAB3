@@ -204,7 +204,21 @@ You can pan the image with the move tool (red box) and clicking on the magnifyin
 
 #### **2.5.3 Export images**
 
+QuPath can also be handy for preparing figures for your publications or presentations. 
+The `Export images` button under `File` provides several options for exporting an image.
 
+<img src="TutorialImages/exportimage_1.png" width="400" height="450" style="margin-left: 40px;">
+
+If you select `Original pixels`, you will be provided a list of available file formats for saving the image. 
+
+<img src="TutorialImages/exportimage_2.png" width="500" height="200" style="margin-left: 40px;">
+
+<img src="TutorialImages/exportimage_3.png" width="500" height="200" style="margin-left: 40px;">
+
+
+Selecting Rendered RGB (with overlays) exports the image as it appears in the QuPath viewer, including overlays. However, because the image is converted to RGB, the exported pixel values may not match the original data. This option is therefore suitable for preparing figures, but not for downstream quantitative analysis.
+
+The Export snapshot menu also includes two additional options that allow more of the QuPath interface to be exported, such as toolbars and panels.
 
 
 ⚠️ **Tip:** You can change the appearance of the scalebar by clicking `Edit --> Preferences` and changing the parameters for Scalebar under the Viewer tab. The screenshot below shows the default parameters and appearance of the scalebar when default parameters are used.
