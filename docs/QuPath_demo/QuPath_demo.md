@@ -347,6 +347,12 @@ We will now create some annotations of a particular class and set the properties
 
 <img src="TutorialImages/annotation_7.png" width="1000" height="600" style="margin-left: 40px;">
 
+You will see the list of annotations appear in the analysis pane. We will now assign a class to these annotations.
+
+4. Double-click on any annotation -- you will see the outline color change to yellow, which means you have now selected the annotation. 
+If you now right-click on the annotation, you will have the option to assign it a class. Click on `Set classification --> Squamous_Epithelium`. You can do this one-by-one for each annotation. 
+
+
 
 
 
