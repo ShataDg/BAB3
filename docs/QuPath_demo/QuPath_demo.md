@@ -77,7 +77,7 @@ QuPath provides powerful tools for **annotation, visualization, and image analys
  - [2.2 Launch QuPath](#22-launch-QuPath)
  - [2.3 Create a QuPath project](#23-create-a-qupath-project)
  - [2.4 Add or remove images to your QuPath project](#24-add-or-remove-images-to-your-qupath-project)
- - [2.5 View and export images](#25-view-images)
+ - [2.5 View and export images](#25-view-and-export-images)
  - [2.6 Set up image properties](#26-set-up-image-properties)
  - [2.7 Create annotations](#27-create-annotations)
  - [2.8 Cell detection and Positive cell detection](#28-cell-detection-and-positive-cell-detection)
