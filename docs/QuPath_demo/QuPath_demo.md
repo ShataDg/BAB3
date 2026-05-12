@@ -352,6 +352,8 @@ You will see the list of annotations appear in the analysis pane. We will now as
 4. Double-click on any annotation -- you will see the outline color change to yellow, which means you have now selected the annotation. 
 If you now right-click on the annotation, you will have the option to assign it a class. Click on `Set classification --> Squamous_Epithelium`. You can do this one-by-one for each annotation. 
 
+⚠️ **Tip:** To assign a class to multiple annotations in one step, select all the annotation thumbnails in the analysis pane. This will select all the annotations in the viewer. You can then right-click on any annotation and set the classification as described above.
+
 
 
 
