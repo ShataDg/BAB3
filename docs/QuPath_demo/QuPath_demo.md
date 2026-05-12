@@ -303,9 +303,27 @@ If the vectors are not well aligned, the `Auto` option can estimate improved sta
 Creating annotations in QuPath can have many applications. Common use cases include measuring lengths or areas, defining specific regions where analysis should be applied, such as cell detection, as well as selecting representative areas for training a classifier. For this tutorial, we will learn to annotate some regions interest (ROI) in an image and perform and export measurements from these ROIs.
 
 
-#### 2.7.1 Draw annotations
+#### **2.7.1 Draw annotations**
 
-**Annotation objects** can be created by drawing specific shapes on the image, using rectangle / circle / polygon tools. One can also use the brush tools to draw custom shapes. This can be done by selecting the tool, clicking on the image, and dragging the mouse. Creating annotation objects allows us to define regions within which we can perform detections. Right-clicking on an annotation "locks" it, and prevents it from getting accidentally deleted. One can make annotations of different classes in QuPath and information regarding the class to which the annotation belongs can be entered by right clicking on the annotated area, and then clicking on `Set Classification`.
+**Annotation objects** can be created by drawing specific shapes on the image, using the (1) rectangle, (2) ellipse, (3) line, (4) polygon, or (5) polyline tools. The (6) brush tool and the (7) wand tool are particularly handy for drawing custom shapes. All of these tools can be applied by selecting the tool, clicking on the image, and dragging the mouse. For the polygon tool, the shape can be completed by releasing the mouse or by double-clicking where the final point should be.
+
+<img src="TutorialImages/annotation_1.png" width="400" height="50" style="margin-left: 40px;">
+
+⚠️ **Tip:** The wand tool is very helpful for making precise annotations around tissue boundaries.
+
+The (9) selection tool converts the annotation tools into tools for selection. This is helpful for selecting multiple annotated regions with a single click and drag. Clicking on the selection tool changes the annotation tool icons into their dashed versions.
+
+<img src="TutorialImages/annotation_2.png" width="400" height="35" style="margin-left: 40px;">
+
+Annotations can be deleted by selecting the annotation and pressing `Delete` on the keyboard, or right-clicking on the annotation and selecting `Delete object`.
+If you make a mistake while annotating with the brush or wand tool, simple press `Option` and click and drag your mouse to erase the incorrectly annotated area. 
+Right-clicking on an annotation "locks" it, and prevents it from getting accidentally deleted. 
+
+Make sure to explore some of these annotation tools and draw different shapes and sizes on the image!
+
+#### **2.7.2 Set annotation properties**
+
+One can make annotations of different classes in QuPath and information regarding the class to which the annotation belongs can be entered by right clicking on the annotated area, and then clicking on `Set Classification`.
 
 
 <img src="TutorialImages/annotations_1.jpg" width="400" height="400" style="margin-left: 40px;">
@@ -314,7 +332,7 @@ Creating annotations in QuPath can have many applications. Common use cases incl
 <img src="TutorialImages/annotations_2.jpg" width="400" height="400" style="margin-left: 40px;">
 
 
-#### 2.7.2 View annotation measurements
+#### **2.7.3 View and export annotation measurements**
 
 Within the **Analysis panel**, below the annotation list you should see a table showing measurements for the currently selected object. This updates automatically if another annotation is selected. Alternatively, you can click on `Measure --> Show annotation measurements`, and a table will pop-up showing the annotation measurements.
 
