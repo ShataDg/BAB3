@@ -325,7 +325,15 @@ Make sure to explore some of these annotation tools and draw different shapes an
 
 #### **2.7.2 Set annotation properties**
 
-It is possible to make annotations of different classes in QuPath, e.g. epithelium, gland, tumor, normal etc. Annotation properties, including the class can be set by right clicking on the annotated area, and then clicking on `Set Classification`.
+QuPath allows you to make annotations of different classes - these classes depend on the image you are working with and your biological question. For example, if you are working with images of kidney tissue, these classes can be different structures you have annotated in the image and want to analyze further, e.g. glomerulus, tubules etc. Or, if you are working with images of diseased tissue, these can be tumor area / abnormal area or normal / healthy area and so on. 
+
+We will now create some annotations of a particular class and set the properties of these annotations.
+
+1. Create an annotation class by clicking on the three dots next to `Auto set` under the `Annotations` tab in the Analysis pane. Then click `Add/Remove --> Add class`. A window will open where you can enter the name of the annotation class; we will enter Squamous_Epithelium.
+
+2. 
+
+Annotation properties, including the class can be set by right clicking on the annotated area, and then clicking on `Set Classification`.
 For this tutorial, let us annotate some areas of squamous epithelium.
 
 <img src="TutorialImages/annotations_1.jpg" width="400" height="400" style="margin-left: 40px;">
