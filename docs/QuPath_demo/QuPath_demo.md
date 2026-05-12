@@ -326,7 +326,7 @@ Make sure to explore some of these annotation tools and draw different shapes an
 #### **2.7.2 Set annotation properties**
 
 It is possible to make annotations of different classes in QuPath, e.g. epithelium, gland, tumor, normal etc. Annotation properties, including the class can be set by right clicking on the annotated area, and then clicking on `Set Classification`.
-For this tutorial, let us annotate some areas of squamous epithelium and sebaceous glands.
+For this tutorial, let us annotate some areas of squamous epithelium.
 
 <img src="TutorialImages/annotations_1.jpg" width="400" height="400" style="margin-left: 40px;">
 
