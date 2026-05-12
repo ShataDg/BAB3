@@ -275,6 +275,7 @@ The `Brightness and Contrast` button provides many helpful options,e.g.,
 <img src="TutorialImages/setimageproperties_6.png" width="700" height="700" style="margin-left: 40px;">
 
 *Viewing the image in grayscale*
+
 <img src="TutorialImages/setimageproperties_7.png" width="700" height="700" style="margin-left: 40px;">
 
 *Inverting the colors of the image*
