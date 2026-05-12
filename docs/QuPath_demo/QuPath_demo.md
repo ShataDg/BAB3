@@ -331,7 +331,37 @@ We will now create some annotations of a particular class and set the properties
 
 1. Create an annotation class by clicking on the three dots next to `Auto set` under the `Annotations` tab in the Analysis pane. Then click `Add/Remove --> Add class`. A window will open where you can enter the name of the annotation class; we will enter Squamous_Epithelium.
 
-2. 
+<img src="TutorialImages/annotation_3.png" width="500" height="250" style="margin-left: 40px;">
+
+
+<img src="TutorialImages/annotation_4.png" width="300" height="150" style="margin-left: 40px;">
+
+
+2. This new class of annotation will appear in the analysis pane. If you like, you can double-click on the annotation and select a different color for your annotation by clicking on the drop-down -- I have changed the annotation color to Lime.
+
+<img src="TutorialImages/annotation_5.png" width="550" height="300" style="margin-left: 40px;">
+
+<img src="TutorialImages/annotation_6.png" width="250" height="150" style="margin-left: 40px;">
+
+3. We will now draw some annotations on the squamous epithelial lining of the tissue. You can use any tool to do this; I have used the brush tool.
+
+<img src="TutorialImages/annotation_7.png" width="1000" height="600" style="margin-left: 40px;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Annotation properties, including the class can be set by right clicking on the annotated area, and then clicking on `Set Classification`.
 For this tutorial, let us annotate some areas of squamous epithelium.
