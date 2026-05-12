@@ -299,17 +299,19 @@ If the vectors are not well aligned, the `Auto` option can estimate improved sta
 
 ### **2.7 Create annotations**
 -------------------------------------
-**Annotation objects** can be created by drawing specific shapes on the image, using rectangle / circle / polygon tools. One can also use the brush tools to draw custom shapes. This can be done by selecting the tool, clicking on the image, and dragging the mouse. Creating annotation objects allows us to define regions within which we can perform detections. Right-clicking on an annotation "locks" it, and prevents it from getting accidentally deleted. One can make annotations of different classes in QuPath and information regarding the class to which the annotation belongs can be entered by right clicking on the annotated area, and then clicking on `Set Classification`.
+
+Creating annotations in QuPath can have many applications. Common use cases include measuring lengths or areas, defining specific regions where analysis should be applied, such as cell detection, as well as selecting representative areas for training a classifier. For this tutorial, we will learn to annotate some regions interest (ROI) in an image and perform and export measurements from these ROIs.
 
 
 #### 2.7.1 Draw annotations
 
+**Annotation objects** can be created by drawing specific shapes on the image, using rectangle / circle / polygon tools. One can also use the brush tools to draw custom shapes. This can be done by selecting the tool, clicking on the image, and dragging the mouse. Creating annotation objects allows us to define regions within which we can perform detections. Right-clicking on an annotation "locks" it, and prevents it from getting accidentally deleted. One can make annotations of different classes in QuPath and information regarding the class to which the annotation belongs can be entered by right clicking on the annotated area, and then clicking on `Set Classification`.
 
 
-<img src="TutorialImages/annotations_1.jpg">
+<img src="TutorialImages/annotations_1.jpg" width="400" height="400" style="margin-left: 40px;">
 
 
-<img src="TutorialImages/annotations_2.jpg">
+<img src="TutorialImages/annotations_2.jpg" width="400" height="400" style="margin-left: 40px;">
 
 
 #### 2.7.2 View annotation measurements
