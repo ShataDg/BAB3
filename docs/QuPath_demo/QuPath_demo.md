@@ -404,6 +404,19 @@ There are several ways of viewing these measurements.
 
 <img src="TutorialImages/measurement_2.png" width="900" height="400" style="margin-left: 40px;">
 
+To export the measurements, you can click on `Save` in the measurement table. This will allow you to export this table as a `.txt` file.
+
+<img src="TutorialImages/measurement_3.png" width="200" height="200" style="margin-left: 40px;">
+
+
+Alternatively, you can click on `Measure --> Export measurements`; this will open a window where you will need to set the following:
+- If you have not already, save the measurements by clicking `File --> Save`
+- Choose the image for which you want to export the measurement. In this tutorial, we have only one image, and select this by clicking on the arrow (red box)
+
+
+
+
+
 
 
 
