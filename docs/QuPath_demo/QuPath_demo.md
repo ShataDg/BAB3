@@ -79,8 +79,8 @@ QuPath provides powerful tools for **annotation, visualization, and image analys
  - [2.4 Add or remove images to your QuPath project](#24-add-or-remove-images-to-your-qupath-project)
  - [2.5 View and export images](#25-view-and-export-images)
  - [2.6 Set up image properties](#26-set-up-image-properties)
- - [2.7 Create annotations](#27-create-annotations)
- - [2.8 Cell detection and Positive cell detection](#28-cell-detection-and-positive-cell-detection)
+ - [2.7 Annotate images, perform and export annotation measurements](#27-annotate-images-perform-and-export-annotation-measurements)
+ - [2.8 Detect positive cells](#28-detect-positive-cells)
 
 
 ### **2.1 Install QuPath**
@@ -299,10 +299,10 @@ These scatterplots help assess whether the stain vectors match the pixel colors 
 If the vectors are not well aligned, the `Auto` option can estimate improved stain vectors from the selected region. However, unexpected colors, such as greenish pixels, can distort the estimate. In such cases, adjusting parameters like `Exclude unrecognised colors (H&E only)` can help remove irrelevant colors and produce more reliable stain separation.
 
 
-### **2.7 Create annotations**
+### **2.7 Annotate images, perform and export annotation measurements**
 -------------------------------------
 
-Creating annotations in QuPath can have many applications. Common use cases include measuring lengths or areas, defining specific regions where analysis should be applied, such as cell detection, as well as selecting representative areas for training a classifier. For this tutorial, we will learn to annotate some regions interest (ROI) in an image and perform and export measurements from these ROIs.
+Annotations in QuPath can have many applications. Common use cases include measuring lengths or areas, defining specific regions where analysis should be applied, such as cell detection, as well as selecting representative areas for training a classifier. For this tutorial, we will learn to annotate some regions interest (ROI) in an image and perform and export measurements from these ROIs.
 
 
 #### **2.7.1 Draw annotations**
@@ -392,6 +392,11 @@ If you now right-click on the annotation, you will have the option to assign it 
 #### **2.7.3 View and export annotation measurements**
 
 For every annotation created on the image, QuPath performs some measurements such as area, perimeter, X and Y co-ordinates.
+There are several ways of viewing these measurements.
+- If you click on the thumbnail of any annotation under the Annotations tab, you will see the measurements that QuPath has made for that annotation will populate the table below.
+
+<img src="TutorialImages/annotation_18.png" width="400" height="600" style="margin-left: 40px;">
+
 
 
 
@@ -400,7 +405,7 @@ Within the **Analysis panel**, below the annotation list you should see a table 
 
 <img src="TutorialImages/annotation_measurements.jpg" alt="alt text">
 
-### **2.8 Cell detection and Positive cell detection**
+### **2.8 Detect positive cells**
 -------------------------------
 
 For this step, we will use the OS-2.ndpi image.
