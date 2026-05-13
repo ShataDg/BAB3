@@ -397,13 +397,15 @@ There are several ways of viewing these measurements.
 
 <img src="TutorialImages/annotation_18.png" width="400" height="600" style="margin-left: 40px;">
 
+- You can also view the per-annotation measurement table by clicking on `Measure --> Show annotation measurements` 
+
+<img src="TutorialImages/measurement_1.png" width="200" height="200" style="margin-left: 40px;">
+
+
+<img src="TutorialImages/measurement_2.png" width="900" height="400" style="margin-left: 40px;">
 
 
 
-
-Within the **Analysis panel**, below the annotation list you should see a table showing measurements for the currently selected object. This updates automatically if another annotation is selected. Alternatively, you can click on `Measure --> Show annotation measurements`, and a table will pop-up showing the annotation measurements.
-
-<img src="TutorialImages/annotation_measurements.jpg" alt="alt text">
 
 ### **2.8 Detect positive cells**
 -------------------------------
