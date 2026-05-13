@@ -359,6 +359,11 @@ If you now right-click on the annotation, you will have the option to assign it 
 ⚠️ **Tip:** To assign a class to multiple annotations in one step, select all the annotation thumbnails in the analysis pane. This will select all the annotations in the viewer. You can then right-click on any annotation and set the classification as described above.
 
 5. Now we will set the properties for each annotation, i.e., assign a unique label to each annotated area of the class Squamous_Epithelium.
+   
+   To assign labels, we double-click on each annotation, select `Annotations --> Set properties` and enter a name, You can also add a description if you like. I have named the annotations S_E_1 (abbreviation for Squamous_Epithelium) through S_E_5.
+
+<img src="TutorialImages/annotation_11.png" width="900" height="350" style="margin-left: 40px;">
+
 
     *Why do we do this step?*
 
@@ -368,6 +373,8 @@ If you now right-click on the annotation, you will have the option to assign it 
 <img src="TutorialImages/annotation_10.png" width="1200" height="500" style="margin-left: 40px;">
 
   However, if we assign unique labels to the annotations, the exported table will include these annotation labels, as you can see in the figure below, and these labels can also be visualized in the viewer. This allows us to precisely map the measurements back to the annotations in the image.
+
+  
 
 
 
