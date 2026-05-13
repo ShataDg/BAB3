@@ -362,7 +362,12 @@ If you now right-click on the annotation, you will have the option to assign it 
    
    To assign labels, we double-click on each annotation, select `Annotations --> Set properties` and enter a name, You can also add a description if you like. I have named the annotations S_E_1 (abbreviation for Squamous_Epithelium) through S_E_5.
 
-<img src="TutorialImages/annotation_11.png" width="900" height="350" style="margin-left: 40px;">
+<img src="TutorialImages/annotation_11.png" width="400" height="300" style="margin-left: 40px;">
+
+   You will notice that the annotation labels now appear next to the annotation thumbnails in the analysis pane, and you can also visualize these labels in the viewer.
+
+<img src="TutorialImages/annotation_12.png" width="800" height="300" style="margin-left: 40px;">
+
 
 
     *Why do we do this step?*
