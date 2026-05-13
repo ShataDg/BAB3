@@ -94,7 +94,7 @@ Please install the latest version from [here](https://qupath.github.io/)
 Click on the QuPath icon, and wait for QuPath to launch.
 When the QuPath window opens, you will notice the welcome screen, which links to QuPath documentation, the [image analysis forum](forum.image.sc), and also the [source code](https://github.com/qupath/qupath)
 
-<img src="TutorialImages/qupathwelcomescreen.jpg" width="400" height="300">
+<img src="TutorialImages/qupathwelcomescreen.jpg" width="450" height="300">
 
 ### **2.3 Create a QuPath project**
 -------------------------------------
