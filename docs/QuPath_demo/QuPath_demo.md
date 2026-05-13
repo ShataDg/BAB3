@@ -368,7 +368,7 @@ If you now right-click on the annotation, you will have the option to assign it 
 
    You will notice that the annotation labels now appear next to the annotation thumbnails in the analysis pane, and you can also visualize these labels in the viewer.
 
-<img src="TutorialImages/annotation_14.png" width="800" height="300" style="margin-left: 40px;">
+<img src="TutorialImages/annotation_14.png" width="750" height="300" style="margin-left: 40px;">
 
 
 *Why do we do this step?*
@@ -376,9 +376,12 @@ If you now right-click on the annotation, you will have the option to assign it 
 If we do not assign unique labels to each annotation, when we perform measurements and export the data, we will not be able to tell exactly which annotation the measurements belong to. This is because, the exported measurement table will look like the figure below, where each row has the measurements for each annotation, but without labels, so we cannot look back at the image and map the measurements back to the annotations.
 
 
-<img src="TutorialImages/annotation_10.png" width="1200" height="500" style="margin-left: 40px;">
+<img src="TutorialImages/annotation_15.png" width="1200" height="500" style="margin-left: 40px;">
 
   However, if we assign unique labels to the annotations, the exported table will include these annotation labels, as you can see in the figure below, and these labels can also be visualized in the viewer. This allows us to precisely map the measurements back to the annotations in the image.
+
+<img src="TutorialImages/annotation_16.png" width="1200" height="500" style="margin-left: 40px;">
+
 
   
 
