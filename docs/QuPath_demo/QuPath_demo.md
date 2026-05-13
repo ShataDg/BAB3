@@ -350,7 +350,7 @@ We will now create some annotations of a particular class and set the properties
 4. Double-click on any annotation -- you will see the outline color change to yellow, which means you have now selected the annotation. 
 If you now right-click on the annotation, you will have the option to assign it a class. Click on `Set classification --> Squamous_Epithelium`. You can do this one-by-one for each annotation. You will see now the thumbnails of the annotations will have a class next to them, and the class Sqaumous_Epithelium has a number next to it indicating the number of annotations that exist in this class.
 
-<img src="TutorialImages/annotation_9.png" width="700" height="400" style="margin-left: 40px;">
+<img src="TutorialImages/annotation_9.png" width="500" height="300" style="margin-left: 40px;">
 
 <img src="TutorialImages/annotation_10.png" width="1000" height="500" style="margin-left: 40px;">
 
@@ -359,46 +359,34 @@ If you now right-click on the annotation, you will have the option to assign it 
 
 5. Now we will set the properties for each annotation, i.e., assign a unique label to each annotated area of the class Squamous_Epithelium.
    
-   To assign labels, we double-click on each annotation, select `Annotations --> Set properties` and enter a name, You can also add a description if you like. I have named the annotations S_E_1 (abbreviation for Squamous_Epithelium) through S_E_5.
+   To assign labels, we double-click on each annotation, select `Annotations --> Set properties` and enter a name, You can also add a description if you like. I have named the annotations S_E_1 (abbreviation for Squamous_Epithelium) through S_E_5. You will notice that the annotation labels now appear next to the annotation thumbnails in the analysis pane, and you can also visualize these labels in the viewer.
 
 <img src="TutorialImages/annotation_13.png" width="400" height="300" style="margin-left: 40px;">
 
 
 <img src="TutorialImages/annotation_11.png" width="400" height="300" style="margin-left: 40px;">
 
-   You will notice that the annotation labels now appear next to the annotation thumbnails in the analysis pane, and you can also visualize these labels in the viewer.
 
-<img src="TutorialImages/annotation_14.png" width="750" height="300" style="margin-left: 40px;">
-
-
-*Why do we do this step?*
-
-If we do not assign unique labels to each annotation, when we perform measurements and export the data, we will not be able to tell exactly which annotation the measurements belong to. This is because, the exported measurement table will look like the figure below, where each row has the measurements for each annotation, but without labels, so we cannot look back at the image and map the measurements back to the annotations.
+<img src="TutorialImages/annotation_14.png" width="1000" height="400" style="margin-left: 40px;">
 
 
-<img src="TutorialImages/annotation_15.png" width="1200" height="500" style="margin-left: 40px;">
+    Why do we do this step?
 
-  However, if we assign unique labels to the annotations, the exported table will include these annotation labels, as you can see in the figure below, and these labels can also be visualized in the viewer. This allows us to precisely map the measurements back to the annotations in the image.
-
-<img src="TutorialImages/annotation_16.png" width="1200" height="500" style="margin-left: 40px;">
+    If we do not assign unique labels to each annotation, when we perform measurements and export the data, we will not be able to tell exactly which annotation the measurements belong to. This is because, the exported measurement table will look like the figure below, where each row has the measurements for each annotation, but without labels, so we cannot look back at the image and map the measurements back to the annotations.
 
 
+<img src="TutorialImages/annotation_15.png" width="1000" height="400" style="margin-left: 40px;">
+
+    However, if we assign unique labels to the annotations, the exported table will include these annotation labels, as you can see in the figure below, and these labels can also be visualized in the viewer. This allows us to precisely map the measurements back to the annotations in the image.
+
+<img src="TutorialImages/annotation_16.png" width="1000" height="400" style="margin-left: 40px;">
+
+
+  Now try making annotations of a different class with different names as shown in the figure below!
   
+  ⚠️ **Hint:** You will pretty much use the same steps as described above!
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-Now try making annotations of a different class with different names as shown in the figure below!
+<img src="TutorialImages/annotation_17.png" width="950" height="400" style="margin-left: 40px;">
 
 
 #### **2.7.3 View and export annotation measurements**
