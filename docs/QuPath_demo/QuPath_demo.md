@@ -414,12 +414,25 @@ Alternatively, you can click on `Measure --> Export measurements`. But before yo
 This will open a window where you will need to set the following:
 - Choose the image for which you want to export the measurement. In this tutorial, we have only one image, and select this by clicking on the arrow (red box)
 
+<img src="TutorialImages/measurement_4.png" width="500" height="400" style="margin-left: 40px;">
 
+You will see the selected image move to the box on the left.
 
+<img src="TutorialImages/measurement_5.png" width="500" height="400" style="margin-left: 40px;">
 
+- Click on `Choose` to set up the name of the file and the location where the file should be saved.
 
+- Select the type of measurements you want to export, i.e., image, annotations, detections etc. We want to export the annotation measurements.
 
+<img src="TutorialImages/measurement_6.png" width="500" height="400" style="margin-left: 40px;">
 
+- Select whether you want the measurements exported to a `.csv` or `.tsv` file. Let us export the measurement to a `.csv` file.
+
+<img src="TutorialImages/measurement_7.png" width="500" height="400" style="margin-left: 40px;">
+
+- Then, click `Export`. QuPath will export the data into a `.csv` having the name that you set and the location that you selected. For this tutorial with the annotations I made, the file looks like this opened in Excel.
+
+<img src="TutorialImages/measurement_8.png" width="1500" height="200" style="margin-left: 40px;">
 
 
 
