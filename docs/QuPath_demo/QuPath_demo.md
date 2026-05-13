@@ -343,16 +343,17 @@ We will now create some annotations of a particular class and set the properties
 
 <img src="TutorialImages/annotation_6.png" width="250" height="150" style="margin-left: 40px;">
 
-3. We will now draw some annotations on the squamous epithelial lining of the tissue. You can use any tool to do this; I have used the brush tool.
+3. We will now draw some annotations on the squamous epithelial lining of the tissue. You can use any tool to do this; I have used the brush tool. You will see the list of annotations appear in the analysis pane. We will now assign a class to these annotations.
 
 <img src="TutorialImages/annotation_7.png" width="1000" height="600" style="margin-left: 40px;">
-
-You will see the list of annotations appear in the analysis pane. We will now assign a class to these annotations.
 
 4. Double-click on any annotation -- you will see the outline color change to yellow, which means you have now selected the annotation. 
 If you now right-click on the annotation, you will have the option to assign it a class. Click on `Set classification --> Squamous_Epithelium`. You can do this one-by-one for each annotation. You will see now the thumbnails of the annotations will have a class next to them, and the class Sqaumous_Epithelium has a number next to it indicating the number of annotations that exist in this class.
 
-<img src="TutorialImages/annotation_9.png" width="1000" height="500" style="margin-left: 40px;">
+<img src="TutorialImages/annotation_9.png" width="700" height="400" style="margin-left: 40px;">
+
+<img src="TutorialImages/annotation_10.png" width="1000" height="500" style="margin-left: 40px;">
+
 
 
 
@@ -369,10 +370,9 @@ If you now right-click on the annotation, you will have the option to assign it 
 <img src="TutorialImages/annotation_12.png" width="800" height="300" style="margin-left: 40px;">
 
 
+*Why do we do this step?*
 
-    *Why do we do this step?*
-
-    If we do not assign unique labels to each annotation, when we perform measurements and export the data, we will not be able to tell exactly which annotation the measurements belong to. This is because, the exported measurement table will look like the figure below, where each row has the measurements for each annotation, but without labels, so we cannot look back at the image and map the measurements back to the annotations.
+If we do not assign unique labels to each annotation, when we perform measurements and export the data, we will not be able to tell exactly which annotation the measurements belong to. This is because, the exported measurement table will look like the figure below, where each row has the measurements for each annotation, but without labels, so we cannot look back at the image and map the measurements back to the annotations.
 
 
 <img src="TutorialImages/annotation_10.png" width="1200" height="500" style="margin-left: 40px;">
