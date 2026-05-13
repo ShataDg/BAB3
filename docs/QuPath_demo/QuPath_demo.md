@@ -391,6 +391,11 @@ If you now right-click on the annotation, you will have the option to assign it 
 
 #### **2.7.3 View and export annotation measurements**
 
+For every annotation created on the image, QuPath performs some measurements such as area, perimeter, X and Y co-ordinates.
+
+
+
+
 Within the **Analysis panel**, below the annotation list you should see a table showing measurements for the currently selected object. This updates automatically if another annotation is selected. Alternatively, you can click on `Measure --> Show annotation measurements`, and a table will pop-up showing the annotation measurements.
 
 <img src="TutorialImages/annotation_measurements.jpg" alt="alt text">
